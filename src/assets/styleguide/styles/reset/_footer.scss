@@ -1,0 +1,46 @@
+footer {
+	padding: 2rem 0 0 0;
+
+	.container-fluid {
+		h3 {
+			font-weight: $text-weight-light;
+		}
+	}
+
+	nav {
+
+		&.pull-right {
+			> ul {
+				margin: 0;
+			}
+		}
+
+		> ul {
+			list-style: none;
+			padding: 0;
+
+			> li {
+				> a,
+				> span {
+					color: theme-color('light');
+					display: inline-block;
+
+					font-size: $small-font-size;
+
+					&:hover {
+						color: theme-color('light');
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+
+	address {
+		background: $brand-inverse;
+		min-height: 2rem;
+
+		padding: $nav-link-padding-y;
+		margin: 0;
+	}
+}

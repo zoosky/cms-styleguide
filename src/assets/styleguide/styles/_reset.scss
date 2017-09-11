@@ -1,0 +1,16 @@
+/**
+ * Resets for CD Bund PoC
+ */
+
+.access-keys,
+.nav-service,
+.nav-services h2,
+.mod-logo img {
+	display: none !important;
+}
+
+
+// IMPORT
+@import 'reset/footer';
+@import 'reset/icons';
+@import 'reset/navbar';

@@ -1,0 +1,14 @@
+---
+layout: cms-layout
+fabricator: true
+---
+
+<h2 data-f-toggle="labels">CD-Bund</h2>
+
+{{#each views.cd-bund.items}}
+
+<li>
+	<a href="cd-bund/{{@key}}.html" class="f-item-heading">{{name}}</a>
+</li>
+
+{{/each}}

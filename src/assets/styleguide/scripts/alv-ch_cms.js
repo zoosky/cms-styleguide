@@ -42,4 +42,11 @@ $( document ).ready(function() {
 
 	$('.mod-searchfield').after(navi);
 
+	if ($('.dropdown.yamm-fw').length) {
+		var containerWidth = $('.container-main > .container').outerWidth();
+		var positionLeft = $('.dropdown.yamm-fw').offset().left;
+		var marginMegamenu = ($(document).width() - containerWidth) / 2;
+		var diff = -(positionLeft - marginMegamenu);
+		$('.dropdown.yamm-fw .dropdown-menu').css('left', diff);
+	}
 });

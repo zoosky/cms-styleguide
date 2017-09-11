@@ -1,0 +1,114 @@
+.mod-leftnavigation {
+	padding-bottom: $alv-box-radius;
+	margin-bottom: $margin-x-general;
+
+	background: $main-color-gray-50;
+	@include alv-border-radius($alv-box-radius);
+
+	box-shadow: $whiteframe-shadow-1dp;
+
+	.nav-page-list {
+		> a {
+			display: block;
+			padding: $nav-link-padding;
+			margin-bottom: $margin-x-narrow;
+
+			font-weight: $text-weight-light;
+
+			border-bottom: 1px solid $main-color-gray-100;
+
+			&.icon.icon--before:before {
+				font-size: small;
+				top: 0;
+			}
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		> ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+
+			li {
+				font-size: $small-font-size;
+
+				> a {
+					color: $body-color;
+					display: block;
+					padding: $nav-link-padding-y $nav-link-padding-x;
+
+					&:hover {
+						background: $main-color-gray-100;
+						color: $body-color;
+						text-decoration: none;
+					}
+
+					&.disabled {
+						color: $nav-link-disabled-color;
+					}
+				}
+
+				&.active {
+					padding: $nav-link-padding-y $nav-link-padding-x;
+					font-weight: $text-weight-bold;
+					box-shadow: inset $subnav-link-active-border 0 0 0 $brand-primary;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 479px){
+
+	.mod-leftnavigation {
+
+		margin-right: ($grid-gutter-width / -2);
+		margin-left:  ($grid-gutter-width / -2);
+		margin-bottom: $margin-x-narrow;
+		padding: 0;
+
+		background-color: $main-color-gray-100;
+		border-radius: 0 !important;
+		box-shadow: none;
+
+		> a {
+			background-color: $main-color-gray-100;
+			color: $body-color;
+			margin-bottom: 0;
+			padding: .5rem;
+
+			text-align: center;
+			cursor: pointer;
+
+			font-weight: 400;
+			font-size: $font-size-base;
+
+			&:before {
+				display: inline-block;
+				margin-right: .5em;
+				vertical-align: -0.05em;
+
+				font-family: FontAwesome;
+				font-size: 1.125em;
+				content: '\f13a';
+			}
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		.nav-page-list {
+			> a {
+				border-bottom: none;
+			}
+
+			> ul > li {
+				font-size: $font-size-base;
+			}
+		}
+	}
+}

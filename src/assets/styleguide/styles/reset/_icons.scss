@@ -28,7 +28,8 @@ span.icon {
 $icon-list: (
 	close  :                '\f00d',
 	menu   :				'\f0c9',
-	search :                '\f002'
+	search :                '\f002',
+	less   :                '\f053'
 );
 
 @function get-font-icon($icon) {

@@ -1,0 +1,33 @@
+.nav-main {
+	li.dropdown.show {
+		background: $white;
+
+		border-right: 1px solid $input-border-color;
+		border-left: 1px solid $input-border-color;
+
+		.nav-link {
+			margin-right: calc(.5rem - 1px);
+			margin-left: calc(.5rem - 1px);
+		}
+	}
+}
+
+
+.dropdown-menu {
+	position: absolute !important;
+	top: calc(100% - 2px);
+	left: 0;
+
+	z-index: 1000;
+	display: none;
+	float: none;
+	min-width: 160px;
+
+	font-size: 1.125rem;
+
+	border: 1px solid rgba(0,0,0,.15);
+	border-radius: 0;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+
+	@include make-megamenu-max-widths();
+}

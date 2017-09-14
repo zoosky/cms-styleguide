@@ -1,0 +1,24 @@
+/**
+ * Resets for CD Bund PoC
+ */
+
+.access-keys,
+.nav-service,
+.nav-services h2,
+.mod-logo img {
+	display: none !important;
+}
+
+
+// IMPORT
+// MIXINS
+@import 'mixins/twbs';
+
+// CORE
+@import 'reset/breadcrumb';
+@import 'reset/dropdown-menu';
+@import 'reset/footer';
+@import 'reset/icons';
+@import 'reset/navbar';
+@import 'reset/subnavigation';
+@import 'reset/twbs';

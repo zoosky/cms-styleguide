@@ -277,3 +277,10 @@ header {
 }
 
 .search-field:focus + .icon--close:after {color: $black;}
+
+// Toolbar additional stuff
+
+.toolbar {
+	margin-right: ($grid-gutter-width / -2);
+	margin-left:  ($grid-gutter-width / -2);
+}

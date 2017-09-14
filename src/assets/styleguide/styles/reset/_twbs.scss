@@ -172,3 +172,14 @@
 		display: none !important;
 	}
 }
+
+// print
+.visible-print {
+	display: none;
+}
+
+@media print {
+	.visible-print {
+		display: block;
+	}
+}

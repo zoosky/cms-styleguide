@@ -125,7 +125,7 @@ header {
 	@media screen and (min-width: 480px) {
 		order: 2;
 
-		.dropdown-toggle:before {
+		.dropdown-toggle:first-child:before {
 			font: normal normal normal 14px/1 FontAwesome;
 			font-size: inherit;
 			text-rendering: auto;

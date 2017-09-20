@@ -49,4 +49,15 @@ $( document ).ready(function() {
 		var diff = -(positionLeft - marginMegamenu);
 		$('.dropdown.yamm-fw .dropdown-menu').css('left', diff);
 	}
+
+
+	var md = new MobileDetect(window.navigator.userAgent);
+
+	if (md.mobile()) {
+		$('.drilldown-container').addClass('collapse');
+
+		$('a[href="#collapseSubNav"]').click(function () {
+			$('.drilldown-container').collapse('toggle');
+		});
+	}
 });

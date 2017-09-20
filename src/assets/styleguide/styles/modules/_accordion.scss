@@ -1,0 +1,33 @@
+.mod-accordion {
+
+	a {
+		display: block;
+
+		text-decoration: none;
+		font-weight: $text-weight-bold;
+
+		border-bottom: 1px solid $main-color-gray-light;
+		padding: $margin-x-narrow 0;
+
+		&:before {
+			display: inline-block;
+			color: $brand-primary;
+			content: '\f078';
+
+			font-family: 'FontAwesome';
+			font-size: $small-font-size;
+		}
+
+		&.collapsed {
+			font-weight: $text-weight-regular;
+
+			&:before {
+				content: '\f054';
+			}
+		}
+	}
+
+	.mod {
+		padding: $margin-x-narrow 1.25rem;
+	}
+}

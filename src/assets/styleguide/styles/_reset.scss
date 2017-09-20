@@ -1,13 +1,23 @@
 /**
  * Resets for CD Bund PoC
  */
-
 .access-keys,
 .nav-service,
 .nav-services h2,
 .mod-logo img {
 	display: none !important;
 }
+
+/**
+ * VARS
+ */
+$main-color-black: 			#333333;
+$main-color-gray-dark: 		#636363; //darken($main-color-gray, 13%);
+$main-color-gray: 			#808080;
+$main-color-gray-light: 	#CFCFCF;
+$main-color-gray-lighter: 	#F1F1F1;
+$main-color-gray-lightest: 	#F8F8F8;
+$main-color-white: 			#FFFFFF;
 
 
 // IMPORT
@@ -23,3 +33,6 @@
 @import 'reset/navbar';
 @import 'reset/subnavigation';
 @import 'reset/twbs';
+
+// MODULES
+@import 'modules/accordion';

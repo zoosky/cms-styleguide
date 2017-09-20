@@ -125,20 +125,28 @@ header {
 	@media screen and (min-width: 480px) {
 		order: 2;
 
-		.dropdown-toggle:first-child:before {
-			font: normal normal normal 14px/1 FontAwesome;
-			font-size: inherit;
-			text-rendering: auto;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
+		.nav-item:first-child {
+			.dropdown-toggle:before {
+				font: normal normal normal 14px/1 FontAwesome;
+				font-size: inherit;
+				text-rendering: auto;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
 
-			content: '\F0C9';
+				content: '\F0C9';
 
-			margin-right: .25em;
+				margin-right: .25em;
+			}
 		}
 
 		.dropdown-toggle:after {
 			display: none;
+		}
+
+		.nav-link {
+			&.icon {
+				text-decoration: none;
+			}
 		}
 	}
 }

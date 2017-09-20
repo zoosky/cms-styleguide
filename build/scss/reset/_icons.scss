@@ -29,7 +29,9 @@ $icon-list: (
 	close  :                '\f00d',
 	menu   :				'\f0c9',
 	search :                '\f002',
-	less   :                '\f053'
+	less   :                '\f053',
+	greater:				$breadcrumb-divider
+
 );
 
 @function get-font-icon($icon) {

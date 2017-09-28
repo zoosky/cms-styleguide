@@ -1,53 +1,39 @@
-
 <!DOCTYPE HTML>
-<!--[if lt IE 7 ]> <html lang="de" class="no-js ie6 oldie"> <![endif]-->
-<!--[if IE 7 ]> <html lang="de" class="no-js ie7 oldie"> <![endif]-->
-<!--[if IE 8 ]> <html lang="de" class="no-js ie8 oldie"> <![endif]-->
-<!--[if IE 9 ]> <html lang="de" class="no-js ie9"> <![endif]-->
-<!--[if gt IE 9 ]><!--><html lang="de" class="no-js no-ie"> <!--<![endif]-->
-
-
-
-
+<!--[if lt IE 7 ]>
+<html lang="de" class="no-js ie6 oldie">
+<![endif]-->
+<!--[if IE 7 ]>
+<html lang="de" class="no-js ie7 oldie">
+<![endif]-->
+<!--[if IE 8 ]>
+<html lang="de" class="no-js ie8 oldie">
+<![endif]-->
+<!--[if IE 9 ]>
+<html lang="de" class="no-js ie9">
+<![endif]-->
+<!--[if gt IE 9 ]><!-->
+<html lang="de" class="no-js no-ie">
+<!--<![endif]-->
 <head>
-
-
-
-
-
-
-
-	<title>Startseite</title>
-
-
-
-
+	<title>Unternehmen</title>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="cleartype" content="on" />
 	<meta name="language" content="de" />
 	<meta name="author" content="ALV" />
+	<!-- current page in other languages -->
+	<link rel="alternate" type="text/html" href="/secoalv/de/home/menue/unternehmen.html" hreflang="de" lang="de"/>
+	<link rel="alternate" type="text/html" href="/secoalv/en/home/menue/unternehmen.html" hreflang="en" lang="en"/>
+	<link rel="alternate" type="text/html" href="/secoalv/it/home/menue/unternehmen.html" hreflang="it" lang="it"/>
+	<link rel="alternate" type="text/html" href="/secoalv/fr/home/menue/unternehmen.html" hreflang="fr" lang="fr"/>
 
 
-
-
-	{{#if fabricator}}<link rel="stylesheet" href="{{baseurl}}/assets/fabricator/styles/f.css">{{/if}}
-
-	<!-- styleguide styles -->
+	<!-- ADDED -->
 	<link rel="stylesheet" href="{{baseurl}}/assets/styleguide/styles/alv-ch_cms.css">
-	<!-- /styleguide styles -->
-
-	<link rel="dns-prefetch" href="//fonts.googleapis.com/">
-
 
 </head>
-
-
-
-
-
-<body class="mod mod-layout  skin-layout-author skin-layout-template-homepage" data-glossary="/secoalv/de/home.glossaryjs.json">
+<body class="mod mod-layout  skin-layout-author skin-layout-template-contentpagefull">
 <ul class="access-keys" role="navigation">
 	<li><a href="/secoalv/de/home.html" accesskey="0">Homepage</a></li>
 	<li><a href="#main-navigation" accesskey="1">Hauptnavigation</a></li>
@@ -55,111 +41,59 @@
 	<li><a href="#site-map" accesskey="3">Sitemap</a></li>
 	<li><a href="#search-field" accesskey="4">Suche</a></li>
 </ul>
-
-
 <!-- begin: container -->
 <div class="container container-main">
-	<header role="banner">
-
+	<header style="background-size: cover; background-image:" role="banner">
 		<div class="clearfix">
 			<!-- begin: metanav -->
 			<section class="nav-services clearfix">
-				<h2>Startseite</h2>
+				<h2>Unternehmen</h2>
 				<nav class="nav-lang">
 					<ul>
-
 						<li>
-
-
 							<a class="active" lang="de" title="Deutsch selected" aria-label="Deutsch selected">DE</a>
-
-
-
-
 						</li>
-
 						<li>
-
-
-
-							<a href="/secoalv/fr/home.html" lang="fr" title="Französisch" aria-label="Französisch">FR</a>
-
-
-
+							<a href="/secoalv/fr/home/menue/unternehmen.exturl.html" lang="fr" title="Französisch" aria-label="Französisch">FR</a>
 						</li>
-
 						<li>
-
-
-
-							<a href="/secoalv/it/home.html" lang="it" title="Italienisch" aria-label="Italienisch">IT</a>
-
-
-
+							<a href="/secoalv/it/home/menue/unternehmen.exturl.html" lang="it" title="Italienisch" aria-label="Italienisch">IT</a>
 						</li>
-
 						<li>
-
-
-
-							<a href="/secoalv/en/home.html" lang="en" title="Englisch" aria-label="Englisch">EN</a>
-
-
-
+							<a href="/secoalv/en/home/menue/unternehmen.exturl.html" lang="en" title="Englisch" aria-label="Englisch">EN</a>
 						</li>
-
 					</ul>
 				</nav>
 				<h2 class="sr-only">Service-Navigation</h2>
-                <nav class="nav-service">
+				<nav class="nav-service">
 					<ul>
-
-
 						<li><a href="/secoalv/de/home.html" title="Startseite" data-skipextcss="true">Startseite</a></li>
-
 						<li><a href="/secoalv/de/home/sitemap.html" title="&Uuml;bersicht" data-skipextcss="true">&Uuml;bersicht</a></li>
-
 					</ul>
 				</nav>
 			</section>
 			<!-- end: metanav -->
 		</div>
-
 		<div class="mod mod-logo">
-			<a href="/index.html" class="brand  hidden-xs" id="logo" title="Startseite">
-				<img src="{{baseurl}}/assets/styleguide/images/logo-CH.png" alt="ALV"/>
-				<h2>ALV</h2>
+			<a href="/secoalv/de/home.html" class="brand  hidden-xs" id="logo" title="Startseite">
+				<img src="{{baseurl}}/assets/styleguide/images/logo-CH.png" alt="Arbeitslosenversicherung ALV"/>
+				<h2>alv
+				</h2>
 			</a>
 		</div>
-
-		<!-- copy from seco.admin.ch -->
 		<div class="mod mod-searchfield">
-		<!-- begin: sitesearch desktop-->
-		<form class="form-horizontal form-search pull-right" role="form">
-			<h2 class="sr-only">Suche</h2>
-			<label for="search-field" class="sr-only"></label>
-			<input id="search-field" name="query" class="form-control search-field" type="text" placeholder=""><span class="icon icon--close" data-form-search-clear=""></span>
-			<button class="icon icon--search icon--before"><span class="sr-only"></span></button></form>
-		<!-- end: sitesearch desktop-->
-		</div>
-
-		<!-- ORIGINAL
-		<div class="mod mod-searchfield">
+			<!-- begin: sitesearch desktop-->
 			<form action="/secoalv/de/home/suche.html" class="form-horizontal form-search pull-right" role="form">
 				<h2 class="sr-only">Suche</h2>
 				<label for="search-field" class="sr-only"></label>
 				<input id="search-field" name="query" class="form-control search-field" type="text" placeholder=""/>
 			</form>
+			<!-- end: sitesearch desktop-->
 		</div>
-		-->
 	</header>
-
-
 	<div class="mod mod-mainnavigation">
-
 		<!-- begin: mainnav -->
 		<nav class="nav-main yamm navbar" id="main-navigation" role="navigation">
-
 			<h2 class="sr-only">
 				Hauptnavigation
 			</h2>
@@ -168,16 +102,11 @@
 				<div class="table-row">
 					<div class="nav-mobile-header">
 						<div class="table-row">
-				<span class="nav-mobile-logo">
-
-
-
-							<img src="{{baseurl}}/assets/styleguide/images/swiss.svg" onerror="this.onerror=null; this.src='/etc/designs/core/frontend/guidelines/img/swiss.png'" alt="ALV"/>
-
-
-				</span>
+                                       <span class="nav-mobile-logo">
+                                       <img src="{{baseurl}}/assets/styleguide/images/swiss.svg" onerror="this.onerror=null; this.src='{{baseurl}}/assets/styleguide/images/logo-CH.png'" alt="ALV"/>
+                                       </span>
 							<h2>
-								<a href="/index.html" title="Startseite">ALV</a>
+								<a href="/secoalv/de/home.html" title="Startseite">Kundenplattform</a>
 							</h2>
 						</div>
 					</div>
@@ -188,35 +117,21 @@
 						<div class="drilldown dropdown-menu" role="menu">
 							<div class="drilldown-container">
 								<nav class="nav-page-list">
-
 									<ul>
-
-
-
 										<li>
-
-
-
 											<a href="/secoalv/de/home/menue.html">Menü</a>
-
-
 										</li>
-
-
-
-										<li>
-
-
-
-											<a href="#">Job-Room</a>
-
-
-										</li>
-
-
 									</ul>
-
-
+									<ul>
+										<li>
+											<a href="/externallinks/secoalv/de/job-room/job-room.html" target="_blank" class="icon icon--after icon--external">Job-Room</a>
+										</li>
+									</ul>
+									<ul>
+										<li>
+											<a href="/externallinks/secoalv/de/amstat/amstat.html" target="_blank" class="icon icon--after icon--external">amstat</a>
+										</li>
+									</ul>
 									<a href="#" class="yamm-close-bottom">
 										<span class="icon icon--top" aria-hidden="true"></span>
 									</a>
@@ -229,54 +144,22 @@
 							<span class="icon icon--search"></span>
 						</a>
 						<div class="dropdown-menu" role="menu">
-
-
-
-
-
-
-
-
-
-
 							<div class="mod mod-searchfield">
-
-
 								<form action="/secoalv/de/home/suche.html" class="form" role="form">
 									<h2 class="sr-only">Suche</h2>
 									<label for="search-field-phone" class="sr-only"></label>
 									<input id="search-field-phone" name="query" class="form-control" type="text" placeholder=""/>
 									<span class="icon icon--search"></span>
 								</form>
-
-
 							</div>
-
-
-
-
-
 						</div>
 					</div>
 				</div>
 			</section>
-
-
 			<ul class="nav navbar-nav">
-
-
-
-
-
-
-
-				<li class="dropdown yamm-fw nav-item">
-
-
-
-					<a href="/secoalv/de/home/stellensuchende.html" class="dropdown-toggle nav-link" data-toggle="dropdown" data-url="/secoalv/de/home/stellensuchende/_jcr_content/par.html">Stellensuchende</a>
-
-					<ul class="dropdown-menu" role="menu" style="left: -507.312px;">
+				<li class="dropdown yamm-fw current">
+					<a href="/secoalv/de/home/menue.html" class="dropdown-toggle" data-toggle="dropdown" data-url="/secoalv/de/home/menue/_jcr_content/par.html">Menü<span class="sr-only">current page</span></a>
+					<ul class="dropdown-menu" role="menu">
 						<li>
 							<div class="yamm-content container-fluid">
 								<div class="row">
@@ -286,7 +169,6 @@
 								</div>
 								<div class="row">
 									<div class="col-md-12 main-column">
-
 									</div>
 								</div>
 								<br><br><br>
@@ -294,281 +176,67 @@
 							</div>
 						</li>
 					</ul>
-
-
 				</li>
-
-
-
-
-
-				<li class="dropdown yamm-fw nav-item">
-
-
-
-					<a href="/secoalv/de/home/unternehmen.html" class="dropdown-toggle nav-link" data-toggle="dropdown" data-url="/secoalv/de/home/unternehmen/_jcr_content/par.html">Unternehmen</a>
-
-					<ul class="dropdown-menu" role="menu" style="left: -507.312px;">
-						<li>
-							<div class="yamm-content container-fluid">
-								<div class="row">
-									<div class="col-sm-12">
-										<a href="#" class="yamm-close icon icon--after icon--close pull-right">Schliessen</a>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12 main-column">
-
-									</div>
-								</div>
-								<br><br><br>
-								<a href="#" class="yamm-close-bottom"><span class="icon icon--top"></span></a>
-							</div>
-						</li>
-					</ul>
-
-
+				<li class="dropdown yamm-fw ">
+					<a href="/externallinks/secoalv/de/job-room/job-room.html" class="dropdown-toggle icon icon--after icon--external" target="_blank">Job-Room</a>
 				</li>
-
-
-
-
-
-				<li class="dropdown yamm-fw nav-item">
-
-
-
-					<a href="/secoalv/de/home/arbeitsvermittler.html" class="dropdown-toggle nav-link" data-toggle="dropdown" data-url="/secoalv/de/home/arbeitsvermittler/_jcr_content/par.html">Arbeitsvermittler</a>
-
-					<ul class="dropdown-menu" role="menu" style="left: -507.312px;">
-						<li>
-							<div class="yamm-content container-fluid">
-								<div class="row">
-									<div class="col-sm-12">
-										<a href="#" class="yamm-close icon icon--after icon--close pull-right">Schliessen</a>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12 main-column">
-
-									</div>
-								</div>
-								<br><br><br>
-								<a href="#" class="yamm-close-bottom"><span class="icon icon--top"></span></a>
-							</div>
-						</li>
-					</ul>
-
-
+				<li class="dropdown yamm-fw ">
+					<a href="/externallinks/secoalv/de/amstat/amstat.html" class="dropdown-toggle icon icon--after icon--external" target="_blank">amstat</a>
 				</li>
-
-
-
-
-
-				<li class="dropdown yamm-fw nav-item">
-
-
-
-					<a href="/secoalv/de/home/institutionen---medien.html" class="dropdown-toggle nav-link" data-toggle="dropdown" data-url="/secoalv/de/home/institutionen---medien/_jcr_content/par.html">Institutionen / Medien</a>
-
-					<ul class="dropdown-menu" role="menu" style="left: -507.312px;">
-						<li>
-							<div class="yamm-content container-fluid">
-								<div class="row">
-									<div class="col-sm-12">
-										<a href="#" class="yamm-close icon icon--after icon--close pull-right">Schliessen</a>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12 main-column">
-
-									</div>
-								</div>
-								<br><br><br>
-								<a href="#" class="yamm-close-bottom"><span class="icon icon--top"></span></a>
-							</div>
-						</li>
-					</ul>
-
-
-				</li>
-
 			</ul>
 		</nav>
 	</div>
+
+
 
 	<!-- begin: main -->
 	{% body %}
 	<!-- end: main -->
 
+	<span class="visible-print">https://authoring-backend.cms3.admin.ch/secoalv/de/home/menue/unternehmen.exturl.html/aHR0cDovL2Rhc2NvLmxpL3N0eWxlZ3VpZGUvam9iLXJvb20vam/9iLXJlc3VsdC1saXN0Lmh0bWw%3d.html</span>
 	<footer role="contentinfo">
-
-
-
-
 		<a name="context-sidebar"></a>
-
-
-
-
-
-
-
-
-
-
 		<div class="container-fluid footer-service">
 			<h3>ALV</h3>
 			<nav>
 				<ul>
-
-
 					<li><a href="/secoalv/de/home.html" title="Startseite">Startseite</a></li>
-
 					<li><a href="/secoalv/de/home/sitemap.html" title="&Uuml;bersicht">&Uuml;bersicht</a></li>
-
 				</ul>
 			</nav>
 		</div>
-
-
-
-
-
-
-
-
 		<div class="container-fluid">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 			<div class="mod mod-cobranding">
-
-
-
-
-
-
 			</div>
-
-
-
-
 			<!-- begin: logo phone -->
-
-
-
-
-
-
-
-
 			<div class="mod mod-logo">
-
-
-
 				<hr class="footer-line visible-xs">
-				<img src="{{baseurl}}/assets/styleguide/images/logo-CH.png" class="visible-xs" alt="ALV"/>
-
-
-
-
+				<img src="{{baseurl}}/assets/styleguide/images/logo-CH.png" class="visible-xs" alt="Arbeitslosenversicherung ALV"/>
 			</div>
-
-
-
-
-
-
 			<!-- end: logo phone -->
 		</div>
-
-
-
-
 		<address>
-
-
-
 			<span class="hidden-xs">ALV</span>
-
-
-
-
-
-
-
 			<nav class="pull-right">
 				<ul>
-
 					<li><a href="http://www.disclaimer.admin.ch/index.html" target="_blank" title="Rechtliche Grundlagen">Rechtliche Grundlagen</a></li>
-
 				</ul>
 			</nav>
-
-
-
-
-
 		</address>
-
-
-
-
-
 	</footer>
-
-
 	<div class="modal" id="nav_modal_rnd">
 		<!-- modal -->
 	</div>
-
 </div>
 <!-- end: container -->
-
-<!-- JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-
-<!-- core Bootstrap -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<!-- MOVED TO BOTTOM -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<!-- ADDED -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-<!-- mobile -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
-<!-- core ALV-CH -->
+<!-- twbs -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+<script src="https://rawgit.com/alv-ch/styleguide/master/build/scripts/alv-ch.js"></script>
 <script src="{{baseurl}}/assets/styleguide/scripts/alv-ch_cms.js"></script>
-<!-- WebFontLoader -->
-<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-<script>
-	WebFont.load({
-		google: {
-			families: ['Open+Sans:300,400,700:latin']
-		}
-	});
-</script>
-<!-- /JavaScript -->
-
 </body>
-
-
-
 </html>

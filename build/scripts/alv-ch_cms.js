@@ -4,8 +4,7 @@
 
 'use strict';
 
-// Reset CD Bund
-$( document ).ready(function() {
+window.addEventListener('DOMContentLoaded', function(){
 
 	var alvHeader = '<div class="alv-header alv-header--inverse bg-inverse">'+
 		'<span class="alv-header__brand mb-0">'+
@@ -42,13 +41,34 @@ $( document ).ready(function() {
 
 	$('.mod-searchfield').after(navi);
 
-	if ($('.dropdown.yamm-fw').length) {
+	if ($('.landing-page').length) {
+		var i=1;
+		var count=$('.mod-columncontrols').length;
+		$('.mod-columncontrols').each(function(){
+			$(this).addClass('columncontrols--landingpage').addClass('columncontrols__'+i);
+			if (i===1){
+				$(this).addClass('columncontrols__first');
+			}
+			if (i===count){
+				$(this).addClass('columncontrols__last');
+			}
+			i++;
+		});
+
+		$('.mod-breadcrumb').hide();
+	}
+});
+
+// Reset CD Bund
+$( document ).ready(function() {
+
+	$('.dropdown.yamm-fw').each(function(){
 		var containerWidth = $('.container-main > .container').outerWidth();
-		var positionLeft = $('.dropdown.yamm-fw').offset().left;
+		var positionLeft = $(this).offset().left;
 		var marginMegamenu = ($(document).width() - containerWidth) / 2;
 		var diff = -(positionLeft - marginMegamenu);
-		$('.dropdown.yamm-fw .dropdown-menu').css('left', diff);
-	}
+		$(this).children('.dropdown-menu').css('left', diff);
+	});
 
 
 	var md = new MobileDetect(window.navigator.userAgent);

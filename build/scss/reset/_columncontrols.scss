@@ -2,27 +2,34 @@
 
 	.row {
 		margin-bottom: $margin-x-general;
+		align-items: stretch;
 	}
 
-	&:first-child {
+	.mod {
+		height: 100%;
+		width: 100%;
+
+		background-color: darken($body-bg, 3%);
+		display: inline-block;
+		overflow-wrap: break-word;
+
+		@include alv-border-radius($alv-box-radius);
+
+		padding: $alv-box-padding;
+		margin-bottom: $margin-x-general;
+
+		box-shadow: $whiteframe-shadow-1dp;
+	}
+
+	&+.mod-columncontrols {
 		.mod {
-			height: 100%;
-			width: 100%;
-
-			background-color: darken($body-bg, 3%);
-			display: inline-block;
-			overflow-wrap: break-word;
-
-			@include alv-border-radius($alv-box-radius);
-
-			padding: $alv-box-padding;
-			margin-bottom: $margin-x-general;
-
-			box-shadow: $whiteframe-shadow-1dp;
+			border-radius: 0 !important;
+			box-shadow: none;
+			background-color: transparent;
 		}
-	}
 
-	&:last-child {
-		background: #E8E8E8;
+		&~.mod-columncontrols {
+			background: #EFEFEF;
+		}
 	}
 }

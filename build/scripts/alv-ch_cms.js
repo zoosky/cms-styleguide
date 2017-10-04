@@ -80,4 +80,10 @@ $( document ).ready(function() {
 			$('.drilldown-container').collapse('toggle');
 		});
 	}
+
+	$('.mod-accordion').each(function(){
+		if ($(this).children().attr('data-first-element-open')){
+			$(this).find('.collapsed')[0].click();
+		}
+	});
 });

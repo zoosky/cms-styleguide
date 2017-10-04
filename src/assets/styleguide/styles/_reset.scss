@@ -35,6 +35,8 @@ $main-color-white: 			#FFFFFF;
 @import 'reset/navbar';
 @import 'reset/subnavigation';
 @import 'reset/twbs';
+@import 'reset/typography';
 
 // MODULES
 @import 'modules/accordion';
+@import 'modules/downloadlist';

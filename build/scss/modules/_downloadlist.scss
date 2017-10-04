@@ -1,0 +1,15 @@
+.mod-downloadlist {
+
+	a {
+		margin-top: $margin-x-narrow;
+
+		.text-dimmed {
+			font-size: 0.85rem;
+		}
+	}
+
+	.downloadinfo {
+		display: block;
+		margin-bottom: $margin-x-narrow;
+	}
+}

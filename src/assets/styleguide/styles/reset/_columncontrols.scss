@@ -34,6 +34,17 @@
 	}
 }
 */
+
+.mod-columncontrols {
+	.mod-image {
+		text-align: center;
+
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
 .columncontrols--landingpage {
 
 	.row {
@@ -63,7 +74,9 @@
 
 	// Logo Friedhof?
 	&.columncontrols__last {
-		background: #EFEFEF;
+		.row {
+			margin-bottom: 0;
+		}
 	}
 
 
@@ -101,9 +114,11 @@
 		}
 	}
 
-	/*
+	&.columncontrols__3 {
+		background: #EFEFEF;
+	}
+
 	 &.columncontrols__4 {
-	  	Logo Friedhof?!
+		 background: #636363;
 	 }
-	 */
 }

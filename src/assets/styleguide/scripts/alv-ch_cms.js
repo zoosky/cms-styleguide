@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', function(){
 
 
 	// main nav
-	var navi = $('.mod-mainnavigation').detach();
+	//var navi = $('.mod-mainnavigation').detach();
 
 	$('.container-main').removeClass('container');
 	$('.container-fluid').addClass('container');
@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', function(){
 		$('.header').prepend(alvHeader);
 	}
 
-	$('.mod-searchfield').after(navi);
+	//$('.mod-searchfield').after(navi);
 
 	if ($('.landing-page').length) {
 		var i=1;

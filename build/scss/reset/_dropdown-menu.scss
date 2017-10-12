@@ -2,10 +2,12 @@
 	li.dropdown.show {
 		background: $white;
 
+		border-top: 1px solid $input-border-color;
 		border-right: 1px solid $input-border-color;
 		border-left: 1px solid $input-border-color;
 
-		.nav-link {
+		> a {
+			padding-top: calc(.5rem - 1px) !important;
 			margin-right: calc(.5rem - 1px);
 			margin-left: calc(.5rem - 1px);
 		}

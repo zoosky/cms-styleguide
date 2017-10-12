@@ -5,6 +5,9 @@
 	}
 }
 
+.navbar {
+	border-bottom: none;
+}
 
 .navbar-alv > .container {
 	display: block;
@@ -86,8 +89,10 @@ header {
 	.mod-searchfield {
 		order: 1;
 
+		/*
 		padding-top: $navbar-padding-y;
 		padding-bottom: $navbar-padding-y;
+        */
 
 		padding-right: 1em !important;
 		padding-left: 1em !important;
@@ -116,7 +121,17 @@ header {
 	}
 }
 
+.nav-main {
+	@include make-container();
+	@include make-container-max-widths();
+}
+
 .mod-mainnavigation {
+
+	background-color: rgba($main-color-gray-100, .75);
+	border-bottom: 1px solid $main-color-gray-100;
+	margin-bottom: $margin-x-narrow;
+
 	@media screen and (max-width: 479px){
 		flex-grow: 2;
 	}
@@ -124,7 +139,7 @@ header {
 	@media screen and (min-width: 480px) {
 		order: 2;
 
-		.nav-item:first-child {
+		li:first-child {
 			.dropdown-toggle:before {
 				font: normal normal normal 14px/1 FontAwesome;
 				font-size: inherit;
@@ -150,21 +165,91 @@ header {
 	}
 }
 
-.nav-main > .navbar-nav {
-	flex-direction: row;
+.nav-main {
 	height: 100%;
-}
 
-.nav-lang ul {
-	list-style: none;
-
-	&.navbar-nav {
-		flex-direction: row;
+	&.navbar {
+		padding: 0;
 	}
 
-	.active.nav-link {
-		font-weight: 700;
-		background-color: transparent;
+	& > .navbar-nav {
+		margin-left: auto !important;
+
+		flex-direction: row;
+		height: 100%;
+
+		> li {
+			padding-top: $navbar-padding-y;
+			padding-bottom: $navbar-padding-y;
+
+			> a {
+				display: block;
+
+				padding: .5rem 1em !important;
+
+				margin-right: .5rem;
+				margin-left: .5rem;
+
+				color: $body-color !important;
+
+				&:hover {
+					background: $body-bg;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+.nav-lang {
+	/*
+	padding-top: $navbar-padding-y;
+	padding-bottom: $navbar-padding-y;
+    */
+
+	> ul {
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+
+		> li {
+			font-size: $small-font-size;
+			padding: 0;
+
+			> a {
+				display: block;
+
+				padding-top: 0.75em;
+				padding-bottom: 0.75em;
+
+				padding-right: .5rem !important;
+				padding-left: .5rem !important;
+
+				margin-right: 0;
+				margin-left: 0;
+
+				color: $body-color !important;
+
+				&.active {
+					font-weight: 700;
+					background-color: transparent;
+				}
+
+				&:hover {
+					background: $body-bg;
+				}
+
+				&.disabled {
+					color: $nav-link-disabled-color !important;
+					&:hover {
+						background: transparent;
+					}
+				}
+			}
+		}
 	}
 }
 

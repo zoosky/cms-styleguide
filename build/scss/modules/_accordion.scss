@@ -30,5 +30,12 @@
 		.mod {
 			padding: $margin-x-narrow 1.25rem;
 		}
+
+
+		.collapse {
+			&.in {
+				display: block !important;
+			}
+		}
 	}
 }

@@ -53,7 +53,7 @@ window.addEventListener('DOMContentLoaded', function(){
 
 // Reset CD Bund
 $( document ).ready(function() {
-
+	/*
 	$('.dropdown.yamm-fw').each(function(){
 		var containerWidth = $('.container-main > .container').outerWidth();
 		var positionLeft = $(this).offset().left;
@@ -80,4 +80,5 @@ $( document ).ready(function() {
 			}
 		}
 	});
+	*/
 });

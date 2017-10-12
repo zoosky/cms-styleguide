@@ -11,9 +11,10 @@
 		> a {
 			display: block;
 			padding: $nav-link-padding;
-			margin-bottom: $margin-x-narrow;
+			//margin-bottom: $margin-x-narrow;
 
 			font-weight: $text-weight-light;
+			font-size: $small-font-size;
 
 			border-bottom: 1px solid $main-color-gray-100;
 
@@ -55,6 +56,11 @@
 					padding: $nav-link-padding-y $nav-link-padding-x;
 					font-weight: $text-weight-bold;
 					box-shadow: inset $subnav-link-active-border 0 0 0 $brand-primary;
+				}
+
+				&.list-emphasis {
+					font-weight: $text-weight-bold;
+					border-bottom: 1px solid $main-color-gray-light;
 				}
 			}
 		}

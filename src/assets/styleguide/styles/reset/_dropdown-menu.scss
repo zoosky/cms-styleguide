@@ -1,5 +1,6 @@
 .nav-main {
-	li.dropdown.show {
+	li.dropdown.show,
+	li.dropdown.open {
 		background: $white;
 
 		border-top: 1px solid $input-border-color;
@@ -10,6 +11,10 @@
 			padding-top: calc(.5rem - 1px) !important;
 			margin-right: calc(.5rem - 1px);
 			margin-left: calc(.5rem - 1px);
+		}
+
+		.dropdown-menu {
+			display: block;
 		}
 	}
 }

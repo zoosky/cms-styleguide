@@ -53,7 +53,7 @@ window.addEventListener('DOMContentLoaded', function(){
 
 // Reset CD Bund
 $( document ).ready(function() {
-	/*
+
 	$('.dropdown.yamm-fw').each(function(){
 		var containerWidth = $('.container-main > .container').outerWidth();
 		var positionLeft = $(this).offset().left;
@@ -73,12 +73,4 @@ $( document ).ready(function() {
 		});
 	}
 
-	$('.mod-accordion').each(function(){
-		if ($(this).children().attr('data-first-element-open')){
-			if ($(this).children().attr('data-first-element-open')==='true') {
-				$(this).find('.collapsed')[0].click();
-			}
-		}
-	});
-	*/
 });

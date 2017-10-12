@@ -1,0 +1,23 @@
+// gleiches Layout auch für Hauptnavigation ?!
+.mod-sitemap {
+	h3 > a {
+		color: $body-color;
+	}
+
+	ul {
+		list-style: none;
+		line-height: 2;
+
+		ul > li > a {
+			font-size: $small-font-size;
+		}
+	}
+
+	.col-sm-3 {
+		border-right: 1px solid $main-color-gray-100;
+
+		&:last-of-type {
+			border-right: none;
+		}
+	}
+}

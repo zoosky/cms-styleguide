@@ -19,7 +19,6 @@
 	}
 }
 
-
 .dropdown-menu {
 	position: absolute !important;
 	top: calc(100% - 2px);
@@ -37,4 +36,12 @@
 	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
 
 	@include make-megamenu-max-widths();
+
+	.yamm-close {
+		font-size: $small-font-size;
+
+		&.icon--after.icon--close:after {
+			top: 0;
+		}
+	}
 }

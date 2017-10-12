@@ -366,6 +366,11 @@ header {
 		right: 10px;
 		top: 4px;
 	}
+
+	.search-field {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
 }
 
 .search-field:focus + .icon--close:after {color: $black;}

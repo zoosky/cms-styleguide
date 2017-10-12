@@ -19,16 +19,8 @@ window.addEventListener('DOMContentLoaded', function(){
 		'</div>' +
 		'</div>';
 
-	// lang-switcher
-	$('.nav-lang').addClass('nav-item');
-	$('.nav-lang > ul').addClass('navbar-nav').addClass('navbar--language-switcher');
-	$('.nav-lang > ul > li').addClass('nav-item');
-	$('.nav-lang > ul > li > a').addClass('nav-link');
 
 	// main nav
-	$('.nav-main > .navbar-nav > li').addClass('nav-item');
-	$('.nav-main > .navbar-nav > li > a').addClass('nav-link');
-	$('.nav-main').removeClass('navbar');
 	var navi = $('.mod-mainnavigation').detach();
 
 	$('.container-main').removeClass('container');

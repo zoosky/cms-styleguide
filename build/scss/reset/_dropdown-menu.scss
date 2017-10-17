@@ -45,3 +45,17 @@
 		}
 	}
 }
+
+@media screen and (max-width: 479px){
+	.dropdown-menu {
+		.drilldown-container {
+			padding: $grid-gutter-width;
+		}
+
+		.nav-page-list ul {
+			list-style: none;
+			padding: 0;
+			width: 100%;
+		}
+	}
+}

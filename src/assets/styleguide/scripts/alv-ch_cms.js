@@ -55,19 +55,15 @@ $( document ).ready(function() {
 		var positionLeft = $(this).offset().left;
 		var marginMegamenu = ($(document).width() - containerWidth) / 2;
 		var diff = -(positionLeft - marginMegamenu);
-		$(this).children('.dropdown-menu').css('left', diff);
+		$(this).children('.dropdown.yamm-fw').css('left', diff);
 	});
 
 	var md = new MobileDetect(window.navigator.userAgent);
 
 	if (md.mobile()) {
-		$('.drilldown-container').addClass('collapse');
-
-		$('a[href="#collapseSubNav"]').click(function () {
-			$('.drilldown-container').collapse('toggle');
-		});
-
 		$('.navbar-alv').after(navi);
+
+		$('.drilldown-container').css('width',($(document).width()*0.8));
 	}
 	else {
 		$('.mod-searchfield').after(navi);

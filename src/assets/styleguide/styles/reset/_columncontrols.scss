@@ -58,6 +58,44 @@
 			@include alv-border-radius($alv-box-radius);
 
 			box-shadow: $whiteframe-shadow-1dp;
+
+			&.mod-text {
+
+				article {
+					height: 100%;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+
+
+					p:last-of-type {
+						flex-grow: 1;
+						width: calc(100% - #{$alv-box-padding});
+						position: relative;
+						margin: 0 auto;
+
+						a {
+							position: absolute;
+							bottom:0;
+							left: 0;
+							right: 0;
+							margin: 0 auto;
+
+							display: block;
+							text-align: center;
+							width: 50%;
+							border: $input-btn-border-width solid transparent;
+							@include button-size($input-btn-padding-y, $input-btn-padding-x, $font-size-base, $input-btn-line-height, $btn-border-radius);
+							@include transition($btn-transition);
+							@include button-variant($brand-primary, $brand-primary);
+
+							&:hover {
+								text-decoration: none;
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 

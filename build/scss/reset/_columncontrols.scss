@@ -14,14 +14,14 @@
 
 	&.columncontrols__first {
 		.mod {
-
 			background-color: darken($body-bg, 3%);
 			display: inline-block;
 			overflow-wrap: break-word;
 
-			@include alv-border-radius($alv-box-radius);
-
-			box-shadow: $whiteframe-shadow-1dp;
+			@media screen and (min-width: 480px){
+				@include alv-border-radius($alv-box-radius);
+				box-shadow: $whiteframe-shadow-1dp;
+			}
 
 			&.mod-text {
 
@@ -165,4 +165,39 @@
 			 margin-top: -1rem;
 		 }
 	 }
+}
+
+
+@media screen and (max-width: 479px){
+	.columncontrols--landingpage {
+		&.columncontrols__first {
+			.mod.mod-text {
+				article {
+					display: block;
+
+					p:last-of-type {
+						position: static;
+
+						a:not(.icon--pdf) {
+							position: static;
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+		&.columncontrols__2 {
+			.mod-textimage figure {
+				display: none;
+			}
+
+			.mod a {
+				width: 100%;
+			}
+		}
+
+		&.columncontrols__4 {
+			display: none;
+		}
+	}
 }

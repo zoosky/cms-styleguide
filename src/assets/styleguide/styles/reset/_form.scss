@@ -1,4 +1,21 @@
 .mod-form .bit-notes {
-	z-index: -2;
-	position: absolute;
+	display: none;
+}
+
+.mod-form {
+	.form-horizontal {
+		.form-group {
+			display: flex;
+		}
+
+		.control-label {
+			text-align: right;
+
+			.form_leftcolmark {
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+		}
+	}
 }

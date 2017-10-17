@@ -1,0 +1,215 @@
+---
+layout: cms-layout
+fabricator: true
+---
+
+<!-- begin: main -->
+<div class="container-fluid hidden-xs">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="mod mod-breadcrumb">
+				<h2 id="br1" class="hidden">Seitenpfad (Breadcrumb)</h2>
+				<ol class="breadcrumb" aria-labelledby="br1">
+					<li class="active" aria-selected="true" aria-label="current page">Kontakt</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-4 col-md-3 drilldown">
+			<div class="mod mod-leftnavigation">
+				<a href="#collapseSubNav" data-toggle="collapse" class="collapsed visible-xs">Unternavigation</a>
+				<div class="drilldown-container">
+					<nav class="nav-page-list">
+						<a href="/secoalv/de/home.html" class="icon icon--before icon--less visible-xs">Zur&uuml;ck</a>
+						<a href="/secoalv/de/home.html" class="icon icon--before icon--less"><span class="sr-only">Zur&uuml;ck </span>Startseite</a>
+						<ul>
+							<li class="active">
+								Kontakt <span class="sr-only">selected</span>
+							</li>
+							<li>
+								<a href="/secoalv/de/home/service/formulare.html">Formulare</a>
+							</li>
+							<li>
+								<a href="/secoalv/de/home/service/publikationen.html">Publikationen</a>
+							</li>
+							<li>
+								<a href="/secoalv/de/home/service/rechtliche-hinweise.html">Rechtliche Hinweise</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-8 col-md-9 main-column" id="content" role="main">
+			<div class="row">
+				<div class="col-md-8 main-content js-glossary-context">
+					<div class="visible-xs visible-sm">
+						<p><a href="#context-sidebar" class="icon icon--before icon--root">Navigation</a></p>
+					</div>
+					<div class="contentHead">
+						<div class="mod mod-backtooverview">
+						</div>
+						<a href="#" onclick="$.printPreview.printPreview()" class="icon icon--before icon--print pull-right" title="Seite drucken"></a>
+						<div class="mod mod-contentpagebfs">
+							<h1 class="text-inline">Kontakt</h1>
+						</div>
+					</div>
+					<div class="mod mod-text">
+						<article class="clearfix">
+							<p>Für Anliegen in Zusammenhang mit der Anmeldung oder Abmeldung offener Stellen wenden Sie sich bitte an das zuständige RAV. &nbsp;</p>
+						</article>
+					</div>
+					<div class="mod mod-form">
+						<form method="POST" action="/secoalv/de/home/service/kontakt.html" id="_kontakt" name="_kontakt" enctype="multipart/form-data">
+							<input type="hidden" name=":formid" value="_kontakt"/><input type="hidden" name=":formstart" value="/content/secoalv/de/home/service/kontakt/jcr:content/par/start"/><input type="hidden" name="_charset_" value="UTF-8"/>
+							<div class="form-horizontal">
+								<div class="alert alert-warning hidden">
+									Bitte überprüfen Sie Ihre Eingaben und versuchen Sie es erneut
+								</div>
+								<input type="text"
+									   name="bit-notes"
+									   class="bit-notes" />
+								<div class="mod mod-hiddendate"><span style="display:none">
+                                                <input id="_kontakt_submitDate" name="submitDate" value="" type="hidden">
+                                                </span>
+								</div>
+								<div class="mod mod-hiddendate"><span style="display:none">
+                                                <input id="_kontakt_submitTime" name="submitTime" value="" type="hidden">
+                                                </span>
+								</div>
+								<div class="mod mod-text">
+									<div class="form-group clearfix">
+										<div class="col-sm-4 control-label">
+											<div class="form_leftcol">
+												<div class="form_leftcollabel"><label for="_kontakt_Name">Name</label></div>
+												<div class="form_leftcolmark"> *</div>
+											</div>
+										</div>
+										<div class="col-sm-8">
+											<div class="form_rightcol" id="Name_rightcol">
+												<div id="Name_0_wrapper" class="form_rightcol_wrapper"><input aria-required=true class="form-control
+                                                            text form_field form_field_text
+                                                            " id="_kontakt_Name" name="Name" value="" size="35" onkeydown="" ></div>
+											</div>
+											<span class="help-block">
+                                                         <div class="form_row_description"></div>
+                                                      </span>
+										</div>
+									</div>
+								</div>
+								<div class="mod mod-text">
+									<div class="form-group clearfix">
+										<div class="col-sm-4 control-label">
+											<div class="form_leftcol">
+												<div class="form_leftcollabel"><label for="_kontakt_Vorname">Vorname</label></div>
+												<div class="form_leftcolmark"> *</div>
+											</div>
+										</div>
+										<div class="col-sm-8">
+											<div class="form_rightcol" id="Vorname_rightcol">
+												<div id="Vorname_0_wrapper" class="form_rightcol_wrapper"><input aria-required=true class="form-control
+                                                            text form_field form_field_text
+                                                            " id="_kontakt_Vorname" name="Vorname" value="" size="35" onkeydown="" ></div>
+											</div>
+											<span class="help-block">
+                                                         <div class="form_row_description"></div>
+                                                      </span>
+										</div>
+									</div>
+								</div>
+								<div class="mod mod-customeremail">
+									<div class="form-group clearfix">
+										<div class="col-sm-4 control-label">
+											<div class="form_leftcol">
+												<div class="form_leftcollabel"><label for="_kontakt_customeremail">E-Mail</label></div>
+												<div class="form_leftcolmark"> *</div>
+											</div>
+										</div>
+										<div class="col-sm-8">
+											<div class="form_rightcol" id="customeremail_rightcol">
+												<div id="customeremail_0_wrapper" class="form_rightcol_wrapper"><input aria-required=true class="form-control
+                                                            text form_field form_field_text
+                                                            " id="_kontakt_customeremail" name="customeremail" value="" size="35" onkeydown="" ></div>
+											</div>
+											<span class="help-block">
+                                                         <div class="form_row_description"></div>
+                                                      </span>
+										</div>
+									</div>
+								</div>
+								<div class="mod mod-text">
+									<div class="form-group clearfix">
+										<div class="col-sm-4 control-label">
+											<div class="form_leftcol">
+												<div class="form_leftcollabel"><label for="_kontakt_Betreff">Betreff</label></div>
+												<div class="form_leftcolmark"> *</div>
+											</div>
+										</div>
+										<div class="col-sm-8">
+											<div class="form_rightcol" id="Betreff_rightcol">
+												<div id="Betreff_0_wrapper" class="form_rightcol_wrapper"><input aria-required=true class="form-control
+                                                            text form_field form_field_text
+                                                            " id="_kontakt_Betreff" name="Betreff" value="" size="35" onkeydown="" ></div>
+											</div>
+											<span class="help-block">
+                                                         <div class="form_row_description"></div>
+                                                      </span>
+										</div>
+									</div>
+								</div>
+								<div class="mod mod-text">
+									<div class="form-group clearfix">
+										<div class="col-sm-4 control-label">
+											<div class="form_leftcol">
+												<div class="form_leftcollabel"><label for="_kontakt_Mitteilung">Mitteilung</label></div>
+												<div class="form_leftcolmark"> *</div>
+											</div>
+										</div>
+										<div class="col-sm-8">
+											<div class="form_rightcol" id="Mitteilung_rightcol">
+												<div id="Mitteilung_0_wrapper" class="form_rightcol_wrapper"><textarea aria-required=true class="form-control
+                                                            textarea form_field form_field_textarea" id="_kontakt_Mitteilung" name="Mitteilung" rows="5" cols="35" onkeydown="" ></textarea></div>
+											</div>
+											<span class="help-block">
+                                                         <div class="form_row_description"></div>
+                                                      </span>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-offset-4 col-sm-8 clearfix">
+										<input class="btn btn-primary pull-right" type="button" name="Senden" value="Senden" onclick="BIT_beforeValidateForm(this.form);if (cq5forms_preCheck__kontakt('Senden')) {BIT_beforeSubmitForm(this.form);document.forms['_kontakt'].submit();} else { BIT_validationFailed(this.form);return false;}">
+									</div>
+									<div class="form_row_description"></div>
+
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="mod mod-backtooverview">
+					</div>
+					<div class="clearfix">
+						<p class="pull-right">
+							<small>
+								<a href="#" class="icon icon--before icon--power hidden-print">
+									Zum Seitenanfang
+								</a>
+							</small>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="context-column">
+						<div class="mod mod-basket">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end: main -->

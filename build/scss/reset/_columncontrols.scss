@@ -1,39 +1,3 @@
-/*.mod-columncontrols {
-
-	.row {
-		margin-bottom: $margin-x-general;
-		align-items: stretch;
-	}
-
-	.mod {
-		height: 100%;
-		width: 100%;
-
-		background-color: darken($body-bg, 3%);
-		display: inline-block;
-		overflow-wrap: break-word;
-
-		@include alv-border-radius($alv-box-radius);
-
-		padding: $alv-box-padding;
-		margin-bottom: $margin-x-general;
-
-		box-shadow: $whiteframe-shadow-1dp;
-	}
-
-	&+.mod-columncontrols {
-		.mod {
-			border-radius: 0 !important;
-			box-shadow: none;
-			background-color: transparent;
-		}
-
-		&~.mod-columncontrols {
-			background: #EFEFEF;
-		}
-	}
-}
-*/
 .columncontrols--landingpage {
 
 	.row {
@@ -65,16 +29,17 @@
 					height: 100%;
 					display: flex;
 					flex-direction: column;
-					justify-content: space-between;
 
+					ul, p {
+						flex-grow: 1;
+					}
 
 					p:last-of-type {
-						flex-grow: 1;
 						width: calc(100% - #{$alv-box-padding});
 						position: relative;
 						margin: 0 auto;
 
-						a {
+						a:not(.icon--pdf) {
 							position: absolute;
 							bottom:0;
 							left: 0;

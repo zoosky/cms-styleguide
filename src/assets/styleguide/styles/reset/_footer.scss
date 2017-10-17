@@ -52,3 +52,17 @@ footer {
 		margin: 0;
 	}
 }
+
+.mod-cobranding {
+
+	.thumbnail-wrapper img {
+		max-height: 64px;
+	}
+
+
+	.col-md-2:first-child {
+		.thumbnail-wrapper img {
+			max-height: 96px;
+		}
+	}
+}

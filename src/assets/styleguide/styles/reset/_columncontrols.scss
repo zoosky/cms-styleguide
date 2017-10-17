@@ -96,6 +96,19 @@
 					}
 				}
 			}
+
+			&.mod-html {
+				a[href*='apple.com'] {
+					margin: 10px;
+				}
+
+				a.icon.icon--external.icon--after {
+
+					&:after {
+						content: '';
+					}
+				}
+			}
 		}
 	}
 

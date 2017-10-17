@@ -11,6 +11,7 @@
 
 .navbar-alv > .container {
 	display: block;
+	padding: 0;
 }
 
 header {
@@ -254,25 +255,25 @@ header {
 }
 
 .nav-mobile {
+	width: 100%;
 
 	.table-row {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 
-		padding-top: $navbar-padding-y/2;
+		padding-bottom: $navbar-padding-y/2;
 
 		.dropdown {
 			font-size: 20px;
-			padding-top: $navbar-padding-y/2;
 
 			a {
 				color: $body-color;
 
-				:link,
-				:hover,
-				:focus,
-				:visited {
+				&:link,
+				&:hover,
+				&:focus,
+				&:visited {
 					text-decoration: none;
 				}
 			}
@@ -337,6 +338,26 @@ header {
 	.mod-mainnavigation > .nav-main > .nav,
 	.mod-searchfield {
 		display: none;
+	}
+
+	.mod-mainnavigation {
+		background-color: rgba($main-color-gray-100, .75);
+		padding: 0 $navbar-padding-x/2;
+
+		.nav-item {
+			padding-top: $navbar-padding-y/2;
+			padding-bottom: $navbar-padding-y/2;
+		}
+	}
+
+	.nav-lang {
+		> ul {
+			> li {
+				> a {
+					padding: .25rem !important;
+				}
+			}
+		}
 	}
 }
 

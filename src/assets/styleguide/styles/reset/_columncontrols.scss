@@ -103,6 +103,7 @@
 				}
 
 				a.icon.icon--external.icon--after {
+					display: inline-block;
 
 					&:after {
 						content: '';

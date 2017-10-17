@@ -4,7 +4,8 @@
 
 'use strict';
 
-window.addEventListener('DOMContentLoaded', function(){
+// Reset CD Bund
+$( document ).ready(function() {
 
 	var alvHeader = '<div class="alv-header alv-header--inverse bg-inverse">'+
 		'<span class="alv-header__brand mb-0">'+
@@ -19,10 +20,6 @@ window.addEventListener('DOMContentLoaded', function(){
 		'</div>' +
 		'</div>';
 
-
-	// main nav
-	var navi = $('.mod-mainnavigation').detach();
-
 	$('.container-main').removeClass('container');
 	$('.container-fluid').addClass('container');
 
@@ -31,7 +28,30 @@ window.addEventListener('DOMContentLoaded', function(){
 		$('.header').prepend(alvHeader);
 	}
 
-	$('.mod-searchfield').after(navi);
+	// main nav
+	var navi = $('.mod-mainnavigation').detach();
+	var md = new MobileDetect(window.navigator.userAgent);
+
+	if (md.mobile()) {
+		$('.mod-searchfield').before(navi);
+
+		$('.drilldown-container').addClass('collapse');
+
+		$('a[href="#collapseSubNav"]').click(function () {
+			$('.drilldown-container').collapse('toggle');
+		});
+	}
+	else {
+		$('.mod-searchfield').after(navi);
+
+		$('.dropdown.yamm-fw').each(function(){
+			var containerWidth = $('.container-main > .container').outerWidth();
+			var positionLeft = $(this).offset().left;
+			var marginMegamenu = ($(document).width() - containerWidth) / 2;
+			var diff = -(positionLeft - marginMegamenu);
+			$(this).children('.dropdown-menu').css('left', diff);
+		});
+	}
 
 	if ($('.landing-page').length) {
 		var i=1;
@@ -48,29 +68,6 @@ window.addEventListener('DOMContentLoaded', function(){
 		});
 
 		$('.mod-breadcrumb').hide();
-	}
-});
-
-// Reset CD Bund
-$( document ).ready(function() {
-
-	$('.dropdown.yamm-fw').each(function(){
-		var containerWidth = $('.container-main > .container').outerWidth();
-		var positionLeft = $(this).offset().left;
-		var marginMegamenu = ($(document).width() - containerWidth) / 2;
-		var diff = -(positionLeft - marginMegamenu);
-		$(this).children('.dropdown-menu').css('left', diff);
-	});
-
-
-	var md = new MobileDetect(window.navigator.userAgent);
-
-	if (md.mobile()) {
-		$('.drilldown-container').addClass('collapse');
-
-		$('a[href="#collapseSubNav"]').click(function () {
-			$('.drilldown-container').collapse('toggle');
-		});
 	}
 
 });

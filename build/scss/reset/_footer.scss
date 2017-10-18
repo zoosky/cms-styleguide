@@ -55,8 +55,14 @@ footer {
 
 .mod-cobranding {
 
-	.thumbnail-wrapper img {
-		max-height: 64px;
+	padding: ($grid-gutter-width/2);
+
+	.thumbnail-wrapper {
+		text-align: center;
+
+		img {
+			max-height: 80px;
+		}
 	}
 
 

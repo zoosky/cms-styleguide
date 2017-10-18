@@ -6,6 +6,7 @@
 
 window.addEventListener('DOMContentLoaded', function(){
 
+	/* todo Bild anpassen Asset aus DAM */
 	var alvHeader = '<div class="alv-header alv-header--inverse bg-inverse">'+
 		'<span class="alv-header__brand mb-0">'+
 		'<img src="https://cdn.rawgit.com/alv-ch/styleguide/6306dee9/build/images/swiss.svg" width="20" height="20" class="d-inline-block" alt="Swiss Confederation">'+
@@ -47,17 +48,7 @@ window.addEventListener('DOMContentLoaded', function(){
 
 // Reset CD Bund
 $( document ).ready(function() {
-	// main nav
 	var navi = $('.mod-mainnavigation').detach();
-
-	$('.dropdown.yamm-fw').each(function(){
-		var containerWidth = $('.container-main > .container').outerWidth();
-		var positionLeft = $(this).offset().left;
-		var marginMegamenu = ($(document).width() - containerWidth) / 2;
-		var diff = -(positionLeft - marginMegamenu);
-		$(this).children('.dropdown.yamm-fw').css('left', diff);
-	});
-
 	var md = new MobileDetect(window.navigator.userAgent);
 
 	if (md.mobile()) {
@@ -69,4 +60,11 @@ $( document ).ready(function() {
 		$('.mod-searchfield').after(navi);
 	}
 
+	$('.dropdown.yamm-fw').each(function(){
+		var containerWidth = $('.container-main > .container').outerWidth();
+		var positionLeft = $(this).offset().left;
+		var marginMegamenu = ($(document).width() - containerWidth) / 2;
+		var diff = -(positionLeft - marginMegamenu);
+		$(this).children('.dropdown-menu').css('left', diff);
+	});
 });

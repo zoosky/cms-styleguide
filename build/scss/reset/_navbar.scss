@@ -35,7 +35,7 @@ header {
 			order: 0;
 			position: absolute;
 			top: 0;
-			left: 0;
+			left:  ($grid-gutter-width / 2);
 			z-index: $logo-zIndex;
 
 			// todo: navbar height * 30px!!

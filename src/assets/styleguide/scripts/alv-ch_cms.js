@@ -48,15 +48,19 @@ window.addEventListener('DOMContentLoaded', function(){
 
 // Reset CD Bund
 $( document ).ready(function() {
-	var navi = $('.mod-mainnavigation').detach();
 	var md = new MobileDetect(window.navigator.userAgent);
 
 	if (md.mobile()) {
-		$('.navbar-alv').after(navi);
+		//$('.navbar-alv').after(navi);
 
 		$('.drilldown-container').css('width',($(document).width()*0.8));
+
+		$('.toolbar-nav').click(function(){
+			$(this).toggleClass('show');
+		});
 	}
 	else {
+		var navi = $('.mod-mainnavigation').detach();
 		$('.mod-searchfield').after(navi);
 	}
 

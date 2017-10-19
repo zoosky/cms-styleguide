@@ -6,12 +6,12 @@
 
 		color: $body-color;
 
-		@media screen and (min-width: 480px){
-			&:after {
-				content: none;
-				border: none;
-			}
+		&:after {
+			content: none;
+			border: none;
+		}
 
+		@media screen and (min-width: 480px){
 			&:last-child {
 				margin-right: 0;
 

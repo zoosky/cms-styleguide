@@ -1,18 +1,25 @@
-.nav-main {
-	li.dropdown.show,
-	li.dropdown.open {
-		background: $white;
+@media screen and (min-width: 480px){
+	.nav-main {
+		li.dropdown.show,
+		li.dropdown.open {
+			background: $white;
 
-		border-top: 1px solid $input-border-color;
-		border-right: 1px solid $input-border-color;
-		border-left: 1px solid $input-border-color;
+			border-top: 1px solid $input-border-color;
+			border-right: 1px solid $input-border-color;
+			border-left: 1px solid $input-border-color;
 
-		> a {
-			padding-top: calc(.5rem - 1px) !important;
-			margin-right: calc(.5rem - 1px);
-			margin-left: calc(.5rem - 1px);
+			> a {
+				padding-top: calc(.5rem - 1px) !important;
+				margin-right: calc(.5rem - 1px);
+				margin-left: calc(.5rem - 1px);
+			}
 		}
+	}
+}
 
+.nav-main {
+	.dropdown.show,
+	.dropdown.open {
 		.dropdown-menu {
 			display: block;
 		}

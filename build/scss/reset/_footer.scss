@@ -4,6 +4,16 @@
 	}
 }
 
+@media screen and (max-width: 479px){
+	footer {
+		display: block;
+	}
+
+	.footer-service {
+		padding-top: $grid-gutter-width;
+	}
+}
+
 
 footer {
 	padding: 0;
@@ -55,7 +65,9 @@ footer {
 
 .mod-cobranding {
 
-	padding: ($grid-gutter-width/2);
+	> .mod-cobranding {
+		padding: $grid-gutter-width;
+	}
 
 	.thumbnail-wrapper {
 		text-align: center;

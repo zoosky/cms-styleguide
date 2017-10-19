@@ -54,8 +54,6 @@ $( document ).ready(function() {
 	if (md.mobile()) {
 		$('.navbar-alv').after(navi);
 
-		$('.drilldown-container').css('width',($(document).width()*0.8));
-
 		$('.toolbar-nav').click(function(){
 			$(this).toggleClass('show');
 		});

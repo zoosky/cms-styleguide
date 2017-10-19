@@ -1,5 +1,4 @@
-
-@media screen and (min-width: 480px){
+@media screen and (min-width: 480px) {
 	.nav-mobile {
 		display: none !important;
 	}
@@ -21,11 +20,11 @@ header {
 
 	position: relative;
 
-	>.alv-header {
+	> .alv-header {
 		position: static;
 	}
 
-	>.mod-logo {
+	> .mod-logo {
 
 		@media screen and (max-width: 479px) {
 			display: none;
@@ -35,7 +34,7 @@ header {
 			order: 0;
 			position: absolute;
 			top: 0;
-			left:  ($grid-gutter-width / 2);
+			left: ($grid-gutter-width / 2);
 			z-index: $logo-zIndex;
 
 			// todo: navbar height * 30px!!
@@ -94,7 +93,6 @@ header {
 		padding-top: $navbar-padding-y;
 		padding-bottom: $navbar-padding-y;
 
-
 		padding-right: 1em !important;
 		padding-left: 1em !important;
 		margin-right: .5rem;
@@ -133,7 +131,7 @@ header {
 	//border-bottom: 1px solid $main-color-gray-100;
 	//margin-bottom: $margin-x-narrow;
 
-	@media screen and (max-width: 479px){
+	@media screen and (max-width: 479px) {
 		flex-grow: 2;
 	}
 
@@ -259,10 +257,12 @@ header {
 
 	.table-row {
 		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
+		padding: 0 $navbar-padding-x/2 $navbar-padding-x/2 $navbar-padding-x/2;
 
-		padding-bottom: $navbar-padding-y/2;
+		.table-cell,
+		.nav-mobile-header {
+			position: static;
+		}
 
 		.dropdown {
 			font-size: 20px;
@@ -278,7 +278,7 @@ header {
 				}
 			}
 
-			.dropdown-toggle:after  {
+			.dropdown-toggle:after {
 				border: none;
 			}
 		}
@@ -301,6 +301,7 @@ header {
 		}
 
 		h2 {
+			display: table-cell;
 			letter-spacing: inherit;
 
 			a {
@@ -334,7 +335,7 @@ header {
 	}
 }
 
-@media screen and (max-width: 479px){
+@media screen and (max-width: 479px) {
 	.mod-mainnavigation > .nav-main > .nav,
 	.mod-searchfield {
 		display: none;
@@ -342,7 +343,6 @@ header {
 
 	.mod-mainnavigation {
 		background-color: rgba($main-color-gray-100, .75);
-		padding: 0 $navbar-padding-x/2;
 
 		.nav-item {
 			padding-top: $navbar-padding-y/2;
@@ -357,6 +357,28 @@ header {
 					padding: .25rem !important;
 				}
 			}
+		}
+	}
+
+	.mod-mainnavigation .nav-mobile .table-cell > a {
+		display: table-cell;
+	}
+
+	.nav-mobile .dropdown-menu form .icon,
+	.nav-mobile .dropdown-menu form a[data-toggle=collapse] {
+		position: absolute;
+		top: 7px;
+		left: 10px;
+	}
+	.nav-mobile .dropdown-menu form input {
+		padding-left: 30px;
+	}
+
+	.nav-mobile .mod-searchfield {
+		margin: $margin-x-narrow;
+
+		form {
+			position: relative;
 		}
 	}
 }
@@ -379,8 +401,12 @@ header {
 			cursor: pointer;
 		}
 	}
-	.icon--search {left: 3px;}
-	span.icon--search {display: none;}
+	.icon--search {
+		left: 3px;
+	}
+	span.icon--search {
+		display: none;
+	}
 	.icon--close {
 		color: $white;
 		transition: color 0.3s;
@@ -394,11 +420,13 @@ header {
 	}
 }
 
-.search-field:focus + .icon--close:after {color: $black;}
+.search-field:focus + .icon--close:after {
+	color: $black;
+}
 
 // Toolbar additional stuff
 
 .toolbar {
 	margin-right: ($grid-gutter-width / -2);
-	margin-left:  ($grid-gutter-width / -2);
+	margin-left: ($grid-gutter-width / -2);
 }

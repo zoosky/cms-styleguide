@@ -22,6 +22,10 @@
 	.dropdown.open {
 		.dropdown-menu {
 			display: block;
+
+			.mod-searchfield {
+				display: block;
+			}
 		}
 	}
 }
@@ -54,9 +58,21 @@
 }
 
 @media screen and (max-width: 479px){
+	.nav-main {
+		position: relative;
+	}
+	.navbar:after, .navbar:before {
+		content: " ";
+		display: table;
+	}
+
+	.yamm .dropdown-menu {
+		width: 100%;
+	}
+
 	.dropdown-menu {
 		.drilldown-container {
-			padding: $grid-gutter-width;
+			margin: $margin-x-narrow;
 		}
 
 		.nav-page-list ul {

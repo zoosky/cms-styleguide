@@ -4,7 +4,15 @@
 
 	.process__item {
 
+		display: table;
+
+		position: static;
+		transform: none;
+
 		color: $body-color;
+		hyphens: auto;
+
+		width: calc(25% - #{$margin-y-narrow*2});
 
 		&:after {
 			content: none;
@@ -33,14 +41,15 @@
 
 		p {
 			margin: 0;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%)
+			display: table-cell;
+			vertical-align: middle;
+			position: static;
+			transform: none;
 		}
 
 
 		@media screen and (max-width: 479px){
+			width: 100%;
 			margin: .25rem 0;
 
 			p {
@@ -55,6 +64,8 @@
 	.process {
 		.process__item {
 			font-size: $small-font-size;
+			padding: ($margin-x-narrow/2) ($margin-y-narrow/2);
+			width: calc(25% - #{$margin-y-narrow});
 		}
 	}
 }

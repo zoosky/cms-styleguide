@@ -21,3 +21,18 @@
 		}
 	}
 }
+
+@media screen and (min-width: 480px) and (max-width: 1024px){
+	.mod-sitemap {
+		font-size: $small-font-size;
+		hyphens: auto;
+
+		h3 {
+			font-size: $text-base-size;
+		}
+
+		ul ul {
+			padding-left: ($grid-gutter-width/2);
+		}
+	}
+}

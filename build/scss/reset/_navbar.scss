@@ -107,6 +107,7 @@ header {
 				height: 1.75em;
 				transition: width 0.4s;
 				&:focus {
+					padding-right: 30px;
 					width: 250px;
 				}
 			}
@@ -409,19 +410,20 @@ header {
 	}
 	.icon--close {
 		color: $white;
-		transition: color 0.3s;
+		transition: all 0.3s;
 		right: 10px;
 		top: 4px;
+		visibility: hidden;
 	}
 
 	.search-field {
 		padding-left: 30px;
-		padding-right: 30px;
 	}
 }
 
 .search-field:focus + .icon--close:after {
 	color: $black;
+	visibility: visible;
 }
 
 // Toolbar additional stuff

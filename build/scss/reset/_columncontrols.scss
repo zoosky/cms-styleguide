@@ -1,8 +1,11 @@
 .columncontrols--landingpage {
 
 	.row {
-		margin-bottom: $margin-x-general;
 		align-items: stretch;
+
+		> div {
+			margin-bottom: $margin-x-general;
+		}
 	}
 
 	.mod {
@@ -198,6 +201,27 @@
 
 		&.columncontrols__4 {
 			display: none;
+		}
+	}
+}
+
+@media screen and (min-width: 480px) and (max-width: 1024px){
+	.columncontrols--landingpage {
+		&.columncontrols__first {
+			.col-sm-4 {
+				flex: 0 0 50% !important;
+				max-width: 50% !important;
+			}
+		}
+
+		&.columncontrols__2 {
+			.mod-textimage figure {
+				display: none;
+			}
+
+			.mod a {
+				width: 100%;
+			}
 		}
 	}
 }

@@ -51,7 +51,7 @@ $( document ).ready(function() {
 	var navi = $('.mod-mainnavigation').detach();
 	var md = new MobileDetect(window.navigator.userAgent);
 
-	if (md.mobile()) {
+	if (md.phone() || $(document).width<480) {
 		$('.navbar-alv').after(navi);
 
 		$('.toolbar-nav').click(function(){
@@ -60,13 +60,25 @@ $( document ).ready(function() {
 	}
 	else {
 		$('.mod-searchfield').after(navi);
+
+		$('.dropdown.yamm-fw').each(function(){
+			var containerWidth = $('.container-main > .container').outerWidth();
+			var positionLeft = $(this).offset().left;
+			var marginMegamenu = ($(document).width() - containerWidth) / 2;
+			var diff = -(positionLeft - marginMegamenu);
+			$(this).children('.dropdown-menu').css('left', diff);
+		});
+
+		$(window).resize(function() {
+
+			$('.dropdown.yamm-fw').each(function(){
+				var containerWidth = $('.container-main > .container').outerWidth();
+				var positionLeft = $(this).offset().left;
+				var marginMegamenu = ($(document).width() - containerWidth) / 2;
+				var diff = -(positionLeft - marginMegamenu);
+				$(this).children('.dropdown-menu').css('left', diff);
+			});
+		});
 	}
 
-	$('.dropdown.yamm-fw').each(function(){
-		var containerWidth = $('.container-main > .container').outerWidth();
-		var positionLeft = $(this).offset().left;
-		var marginMegamenu = ($(document).width() - containerWidth) / 2;
-		var diff = -(positionLeft - marginMegamenu);
-		$(this).children('.dropdown-menu').css('left', diff);
-	});
 });

@@ -82,3 +82,15 @@
 		}
 	}
 }
+
+@media screen and (min-width: 480px) and (max-width: 1024px){
+	.nav-main {
+		li.dropdown.show,
+		li.dropdown.open {
+			> a {
+				margin-right: 0;
+				margin-left: 0;
+			}
+		}
+	}
+}

@@ -7,6 +7,10 @@
 @media screen and (max-width: 479px){
 	footer {
 		display: block;
+
+		address {
+			padding: 0 ($grid-gutter-width/2);
+		}
 	}
 
 	.footer-service {
@@ -14,10 +18,11 @@
 	}
 }
 
-
 footer {
 	padding: 0;
-
+	font-size: $small-font-size;
+	background: $brand-inverse;
+	display: inline-block;
 
 	.container-fluid {
 		h3 {
@@ -38,16 +43,15 @@ footer {
 			padding: 0;
 
 			> li {
-				> a,
-				> span {
+				a {
 					color: theme-color('light');
 					display: inline-block;
 
-					font-size: $small-font-size;
+					padding: $nav-link-padding-y 0;
 
 					&:hover {
 						color: theme-color('light');
-						text-decoration: underline;
+						text-decoration: none;
 					}
 				}
 			}
@@ -55,15 +59,38 @@ footer {
 	}
 
 	address {
-		background: $brand-inverse;
-		min-height: 2rem;
+		padding: $nav-link-padding-y ($grid-gutter-width/2);
 
-		padding: $nav-link-padding-y;
-		margin: 0;
+		@media screen and (max-width: 479px){
+			padding: 0 ($grid-gutter-width/2);
+		}
+
+		margin: 0 auto;
+
+		@include make-container-max-widths();
+
+		span {
+			display: inline-block;
+			padding: $nav-link-padding-y;
+		}
+		a {
+			color: theme-color('light');
+			display: inline-block;
+
+			padding: $nav-link-padding-y;
+
+			&:hover {
+				color: theme-color('light');
+				text-decoration: none;
+				background:  $main-color-gray-dark;
+			}
+		}
 	}
 }
 
 .mod-cobranding {
+
+	background: $main-color-gray-dark;
 
 	> .mod-cobranding {
 		padding: $grid-gutter-width;

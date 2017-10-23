@@ -50,3 +50,11 @@
 		}
 	}
 }
+
+@media screen and (min-width: 480px) and (max-width: 1024px){
+	.process {
+		.process__item {
+			font-size: $small-font-size;
+		}
+	}
+}

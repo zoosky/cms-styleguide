@@ -433,11 +433,37 @@ header {
 
 
 @media screen and (min-width: 480px) and (max-width: 1024px){
+	header {
+		.clearfix {
+			margin-left: 0;
+		}
+
+		.mod-searchfield {
+			padding-right: .5rem !important;
+			padding-left: .5rem !important;
+
+			margin: 0;
+
+			form .search-field {
+				width: 100px;
+
+				&:focus {
+					width: 150px;
+				}
+			}
+		}
+	}
+
 	.nav-main > .navbar-nav > li > a {
 		padding-right: .5rem !important;
 		padding-left: .5rem !important;
 
 		margin-right: 1px;
 		margin-left: 1px;
+	}
+
+	.nav-lang > ul > li > a {
+		padding-right: .25rem !important;
+		padding-left: .25rem !important;
 	}
 }

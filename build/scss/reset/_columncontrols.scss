@@ -136,7 +136,7 @@
 	}
 
 	 &.columncontrols__4 {
-		 background: #636363;
+		 background: $main-color-gray-dark;
 
 		 .mod {
 			 margin-bottom: 0;
@@ -173,6 +173,10 @@
 
 @media screen and (max-width: 479px){
 	.columncontrols--landingpage {
+		h2 {
+			font-size: $h3-font-size;
+		}
+
 		&.columncontrols__first {
 			.mod.mod-text {
 				article {
@@ -207,6 +211,11 @@
 
 @media screen and (min-width: 480px) and (max-width: 1024px){
 	.columncontrols--landingpage {
+
+		h2 {
+			font-size: $h3-font-size;
+		}
+
 		&.columncontrols__first {
 			.col-sm-4 {
 				flex: 0 0 50% !important;
@@ -221,6 +230,21 @@
 
 			.mod a {
 				width: 100%;
+			}
+		}
+
+		&.columncontrols__4 {
+			.row {
+				> div {
+					margin-bottom: ($margin-x-general/2);
+				}
+			}
+
+			.mod-image {
+				img {
+					margin-top: 16px;
+					max-height: 32px;
+				}
 			}
 		}
 	}

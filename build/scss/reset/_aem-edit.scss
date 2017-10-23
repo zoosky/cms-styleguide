@@ -6,3 +6,10 @@
 	left: auto;
 	position: static;
 }
+
+.skin-layout-editmode {
+	.nav-service,
+	.nav-services h2 {
+		display: block;
+	}
+}

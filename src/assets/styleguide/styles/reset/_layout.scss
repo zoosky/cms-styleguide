@@ -6,22 +6,9 @@
 // todo delete
 @media screen and (min-width: 480px) and (max-width: 1024px){
 	.landing-page__regular {
-		flex: 0 0 50% !important;
-		max-width: 50% !important;
-
 		&.landing-page__regular--media {
 			flex: 0 0 100% !important;
 			max-width: 100% !important;
 		}
-	}
-
-	.landing-page__wide {
-		flex: 0 0 100% !important;
-		max-width: 100% !important;
-	}
-
-	.landing-page__half {
-		flex: 0 0 100% !important;
-		max-width: 100% !important;
 	}
 }

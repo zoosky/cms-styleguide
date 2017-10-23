@@ -5,7 +5,8 @@
 .nav-service,
 .nav-services h2,
 .mod-logo img,
-.mod-basket {
+.mod-basket,
+html.js .nojs {
 	display: none !important;
 }
 
@@ -45,3 +46,4 @@ $main-color-white: 			#FFFFFF;
 // MODULES
 @import 'modules/accordion';
 @import 'modules/downloadlist';
+@import 'modules/search';

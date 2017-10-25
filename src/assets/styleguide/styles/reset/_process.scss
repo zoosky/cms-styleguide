@@ -2,6 +2,8 @@
 
 .process {
 
+	justify-content: center;
+
 	.process__item {
 
 		display: table;
@@ -13,6 +15,10 @@
 		hyphens: auto;
 
 		width: calc(25% - #{$margin-y-narrow*2});
+
+		&.process__item--third:first-of-type {
+			margin-left: calc(12.5% - #{$margin-y-narrow*2});
+		}
 
 		&:after {
 			content: none;

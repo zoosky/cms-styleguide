@@ -81,4 +81,7 @@ $( document ).ready(function() {
 		});
 	}
 
+	// hyphenator
+	Hyphenator.config({remoteloading : false});
+	Hyphenator.run();
 });

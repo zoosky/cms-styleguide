@@ -8,3 +8,7 @@
 		}
 	}
 }
+
+@function get-breakpoint($breakpoint: "lg") {
+	@return map-get($grid-breakpoints, $breakpoint);
+}

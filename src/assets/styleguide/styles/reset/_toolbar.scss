@@ -1,0 +1,31 @@
+.toolbar-nav {
+	align-items: flex-start;
+
+	.nav-item {
+		text-align: left;
+
+		a {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+
+			> span:last-of-type {
+				margin-left: 0.5rem;
+			}
+		}
+	}
+
+	@media screen and (max-width: get-breakpoint('xxl')){
+		.nav-item a {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+		}
+	}
+}
+
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+	.toolbar-nav.toolbar-nav--has-icon .nav-item .nav-link {
+		padding: 1.5rem 0;
+	}
+}

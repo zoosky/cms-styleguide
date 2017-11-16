@@ -82,6 +82,6 @@ $( document ).ready(function() {
 	}
 
 	// hyphenator
-	Hyphenator.config({remoteloading : false});
+	Hyphenator.config({remoteloading: false, defaultlanguage: 'de'});
 	Hyphenator.run();
 });

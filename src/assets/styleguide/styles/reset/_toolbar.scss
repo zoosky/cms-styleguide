@@ -24,6 +24,12 @@
 	}
 }
 
+@media screen and (max-width: 479px) {
+	.toolbar-nav {
+		align-items: center;
+	}
+}
+
 @media screen and (min-width: 480px) and (max-width: 1024px) {
 	.toolbar-nav.toolbar-nav--has-icon .nav-item .nav-link {
 		padding: 1.5rem 0;

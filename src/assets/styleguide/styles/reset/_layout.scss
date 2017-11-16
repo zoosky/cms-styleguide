@@ -7,6 +7,13 @@ body {
 	margin-bottom: $header-margin;
 }
 
+
+@media screen and (max-width: 479px){
+	.header {
+		margin-bottom: $header-mobile-margin;
+	}
+}
+
 // missing in alv-styleguide (iframe on landingpage)
 .landing-page__regular--media > .landing-page--container {
 	padding: 0;

@@ -31,9 +31,11 @@
   "devDependencies": {
     "babel-core": "^5.2.17",
     "babel-loader": "5.0.0",
+    "bootstrap-slider": "9.8.0",
     "browser-sync": "^2.7.1",
     "del": "^1.1.1",
     "fabricator-assemble": "^1.1.7",
+    "findup-sync": "1.0.0",
     "gulp": "^3.8.11",
     "gulp-autoprefixer": "^2.2.0",
     "gulp-csso": "^1.0.0",
@@ -44,20 +46,18 @@
     "gulp-sourcemaps": "^1.5.2",
     "gulp-util": "^3.0.4",
     "imports-loader": "^0.6.3",
-    "run-sequence": "^1.0.2",
-    "node-sass-tilde-importer": "latest",
-    "script-loader": "^0.6.1",
-    "findup-sync": "1.0.0",
-    "webpack": "^1.8.11",
-    "popper.js": "^1.11.0",
     "jquery": "^3.0.0",
-    "bootstrap-slider": "9.8.0"
+    "node-sass-tilde-importer": "latest",
+    "popper.js": "^1.12.9",
+    "run-sequence": "^1.0.2",
+    "script-loader": "^0.6.1",
+    "webpack": "^1.8.11"
   },
   "bugs": {
     "url": "https://github.com/alv-ch/cms-styleguide/issues"
   },
   "dependencies": {
-    "@alv-ch/alv-styleguide": "0.0.11"
+    "@alv-ch/alv-styleguide": "0.0.12"
   },
   "homepage": "https://github.com/alv-ch/cms-styleguide#readme"
 }

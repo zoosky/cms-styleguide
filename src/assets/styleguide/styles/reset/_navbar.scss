@@ -78,8 +78,8 @@ header {
 				&:before {
 					color: $main-color-gray;
 					font-weight: 400;
-					content: 'ch';
-					right: -1.2em;
+					content: 'swiss';
+					right: -2.5em;
 					position: absolute;
 				}
 			}
@@ -128,9 +128,6 @@ header {
 
 .mod-mainnavigation {
 
-	//background-color: rgba($main-color-gray-100, .75);
-	//border-bottom: 1px solid $main-color-gray-100;
-	//margin-bottom: $margin-x-narrow;
 
 	@media screen and (max-width: 479px) {
 		flex-grow: 2;

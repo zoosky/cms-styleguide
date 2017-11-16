@@ -1,3 +1,12 @@
+// changes to alv-styleguide
+body {
+	margin-top: 0 !important;
+}
+
+.header {
+	margin-bottom: $header-margin;
+}
+
 // missing in alv-styleguide (iframe on landingpage)
 .landing-page__regular--media > .landing-page--container {
 	padding: 0;

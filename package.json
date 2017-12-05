@@ -48,7 +48,7 @@
     "imports-loader": "^0.6.3",
     "jquery": "^3.0.0",
     "node-sass-tilde-importer": "latest",
-    "popper.js": "^1.12.9",
+    "popper.js": "^1.13.0",
     "run-sequence": "^1.0.2",
     "script-loader": "^0.6.1",
     "webpack": "^1.8.11"
@@ -57,7 +57,7 @@
     "url": "https://github.com/alv-ch/cms-styleguide/issues"
   },
   "dependencies": {
-    "@alv-ch/alv-styleguide": "0.0.12"
+    "@alv-ch/alv-styleguide": "0.0.17"
   },
   "homepage": "https://github.com/alv-ch/cms-styleguide#readme"
 }

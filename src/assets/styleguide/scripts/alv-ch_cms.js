@@ -63,7 +63,7 @@ $( document ).ready(function() {
 	var navi = $('.mod-mainnavigation').detach();
 	var md = new MobileDetect(window.navigator.userAgent);
 
-	if (md.phone() || $(document).width()<480) {
+	if (md.phone() || $(document).width()<768) {
 		$('.navbar-alv').after(navi);
 
 		$('.toolbar-nav').click(function(){

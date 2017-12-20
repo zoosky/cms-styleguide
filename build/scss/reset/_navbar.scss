@@ -33,57 +33,32 @@ header {
 		@media screen and (min-width: 768px) {
 			order: 0;
 			position: absolute;
-			top: 0;
+			top: 1px;
 			left: ($grid-gutter-width / 2);
 			z-index: $logo-zIndex+10;
 
-			// todo: navbar height * 30px!!
 			height: $logo-height;
-			width: calc(#{$logo-height} * #{$phi});
+			width: $logo-width;
 
 			font-weight: 300;
 
-			background: $additional-accent-amber;
+			background: $white;
 			color: $black;
 			display: inline-block;
 
 			@include alv-border-radius($alv-box-radius);
 
-			padding: ($alv-box-padding/3) $alv-box-padding;
+			padding: 0 $alv-box-padding;
 
-			-webkit-box-shadow: 10px 5px 20px 10px rgba(0, 0, 0, 0.05);
-			-moz-box-shadow: 10px 5px 20px 10px rgba(0, 0, 0, 0.05);
-			box-shadow: 10px 5px 20px 10px rgba(0, 0, 0, 0.05);
+			box-shadow: $whiteframe-shadow-1dp;
 
 			h2 {
-				font-size: 1.3rem;
-				font-weight: 700;
-				line-height: inherit;
-				text-transform: lowercase;
-				position: absolute;
+				display: none;
+			}
 
-				color: black;
-				letter-spacing: $logo-spacing;
-
-				/*
-				&:after {
-					color: $main-color-gray;
-					content: '+';
-					font-weight: 700;
-					font-size: 0.75em;
-					position: absolute;
-					bottom: -.4em;
-					right: -.4em;
-				}
-
-				&:before {
-					color: $main-color-gray;
-					font-weight: 400;
-					content: 'swiss';
-					right: -2.5em;
-					position: absolute;
-				}
-				*/
+			img {
+				height: 100%;
+				width: 100%;
 			}
 		}
 	}
@@ -312,26 +287,6 @@ header {
 				position: absolute;
 
 				color: $additional-accent-amber;
-
-				/*
-				&:after {
-					color: $main-color-gray;
-					content: '+';
-					font-weight: 700;
-					font-size: 0.75em;
-					position: absolute;
-					bottom: -.4em;
-					right: -.4em;
-				}
-
-				&:before {
-					color: $main-color-gray;
-					font-weight: 400;
-					content: 'swiss';
-					right: -2.6em;
-					position: absolute;
-				}
-				*/
 			}
 		}
 	}

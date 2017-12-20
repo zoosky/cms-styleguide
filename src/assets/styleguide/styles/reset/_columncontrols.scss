@@ -17,7 +17,7 @@
 
 	&.columncontrols__first {
 		.mod {
-			background-color: darken($body-bg, 3%);
+			background-color: $main-color-gray-100;
 			display: inline-block;
 			overflow-wrap: break-word;
 
@@ -128,7 +128,7 @@
 	}
 
 	&.columncontrols__3 {
-		background: #EFEFEF;
+		background: $main-color-gray-100;
 
 		.row {
 			margin-bottom: 0;

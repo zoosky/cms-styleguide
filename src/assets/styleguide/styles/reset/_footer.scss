@@ -1,4 +1,10 @@
 @media screen and (min-width: 480px){
+	.container-main {
+		position: relative;
+		min-height: 100%;
+		padding-bottom: 60px;
+	}
+
 	.footer-service {
 		display: none;
 	}
@@ -23,6 +29,10 @@ footer {
 	font-size: $small-font-size;
 	background: $brand-inverse;
 	display: inline-block;
+
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 
 	.container-fluid {
 		h3 {

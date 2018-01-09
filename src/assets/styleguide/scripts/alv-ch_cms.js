@@ -6,26 +6,6 @@
 
 window.addEventListener('DOMContentLoaded', function(){
 
-	/* Bild anpassen Asset aus DAM */
-	var alvHeaderTitle = 'Arbeitslosenversicherung ALV';
-	var url = window.location.href;
-	if (url.toLowerCase().indexOf('secoalv/fr/') >= 0){
-		alvHeaderTitle = 'Assurance-chômage AC';
-	}
-	else if (url.toLowerCase().indexOf('secoalv/it/') >= 0) {
-		alvHeaderTitle = 'Assicurazione contro la disoccupazione AD';
-	}
-	else if (url.toLowerCase().indexOf('secoalv/en/') >= 0) {
-		alvHeaderTitle = 'Unemployment insurance';
-	}
-
-	var alvHeader = '<div class="alv-header alv-header--inverse bg-inverse">'+
-		'<span class="alv-header__brand mb-0">'+
-		'<img src="/etc/designs/core/frontend/guidelines/img/swiss.svg" width="20" height="20" class="d-inline-block" alt="Swiss Confederation">'+
-		'&nbsp;'+alvHeaderTitle+
-		'</span>'+
-		'</div>';
-
 	var header = 	'<div class="header sticky-top">' +
 		'<div class="navbar navbar-alv navbar-light bg-faded">' +
 		'<div class="container"></div>' +
@@ -36,9 +16,6 @@ window.addEventListener('DOMContentLoaded', function(){
 	$('.container-fluid').addClass('container');
 
 	$('header').wrap(header);
-	if (!$('.alv-header').length){
-		$('.header').prepend(alvHeader);
-	}
 
 	if ($('.landing-page').length) {
 		var i=1;

@@ -13,6 +13,7 @@
 @media screen and (max-width: 479px){
 	footer {
 		display: block;
+		position: static;
 
 		address {
 			padding: 0 ($grid-gutter-width/2);

@@ -57,7 +57,7 @@
     "url": "https://github.com/alv-ch/cms-styleguide/issues"
   },
   "dependencies": {
-    "@alv-ch/alv-styleguide": "0.1.0"
+    "@alv-ch/alv-styleguide": "0.1.2"
   },
   "homepage": "https://github.com/alv-ch/cms-styleguide#readme"
 }

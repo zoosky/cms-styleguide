@@ -291,13 +291,12 @@ header {
 			letter-spacing: inherit;
 
 			a {
-				font-size: $logo-size;
-				font-weight: 700;
+				font-size: 1.25rem;
+				font-weight: 400;
 				line-height: inherit;
 				text-transform: lowercase;
-				position: absolute;
 
-				color: $additional-accent-amber;
+				color: $main-accent-color;
 			}
 		}
 	}

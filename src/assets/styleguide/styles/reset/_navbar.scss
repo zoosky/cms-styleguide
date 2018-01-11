@@ -105,8 +105,8 @@ header {
 
 .mod-mainnavigation {
 
-	.nav-main.navbar {
-		li:last-of-type > a {
+	@media screen and (min-width: 768px) {
+		&> .nav-main.navbar > .navbar-nav > li:last-of-type > a {
 			background: $main-accent-color;
 			color: $white !important;
 
@@ -115,7 +115,6 @@ header {
 			}
 		}
 	}
-
 
 	@media screen and (max-width: 767px) {
 		flex-grow: 2;
@@ -243,7 +242,7 @@ header {
 
 	.table-row {
 		display: flex;
-		padding: 0 $navbar-padding-x/2 $navbar-padding-x/2 $navbar-padding-x/2;
+		padding: 0 $navbar-padding-x/2;
 
 		.table-cell,
 		.nav-mobile-header {

@@ -105,6 +105,17 @@ header {
 
 .mod-mainnavigation {
 
+	.nav-main.navbar {
+		li:last-of-type > a {
+			background: $main-accent-color;
+			color: $white !important;
+
+			&:hover {
+				background: $main-accent-color-hover;
+			}
+		}
+	}
+
 
 	@media screen and (max-width: 767px) {
 		flex-grow: 2;

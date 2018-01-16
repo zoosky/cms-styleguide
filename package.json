@@ -1,6 +1,6 @@
 {
   "name": "@alv-ch/cms-styleguide",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "alv-ch styleguide for cms aem",
   "main": "README.md",
   "scripts": {
@@ -32,7 +32,7 @@
     "babel-core": "^5.2.17",
     "babel-loader": "5.0.0",
     "bootstrap-slider": "9.8.0",
-    "browser-sync": "^2.7.1",
+    "browser-sync": "^2.23.5",
     "del": "^1.1.1",
     "fabricator-assemble": "^1.1.7",
     "findup-sync": "1.0.0",
@@ -47,7 +47,7 @@
     "gulp-util": "^3.0.4",
     "imports-loader": "^0.6.3",
     "jquery": "^3.0.0",
-    "node-sass-tilde-importer": "latest",
+    "node-sass-tilde-importer": "^1.0.1",
     "popper.js": "^1.13.0",
     "run-sequence": "^1.0.2",
     "script-loader": "^0.6.1",
@@ -57,7 +57,7 @@
     "url": "https://github.com/alv-ch/cms-styleguide/issues"
   },
   "dependencies": {
-    "@alv-ch/alv-styleguide": "0.1.2"
+    "@alv-ch/alv-styleguide": "0.1.7"
   },
   "homepage": "https://github.com/alv-ch/cms-styleguide#readme"
 }

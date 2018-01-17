@@ -16,6 +16,10 @@
 
 		width: calc(25% - #{$margin-y-narrow*2});
 
+		&.process__item--third:first-of-type {
+			margin-left: 0 !important;
+		}
+
 		&:after {
 			content: none;
 			border: none;

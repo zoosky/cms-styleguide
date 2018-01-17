@@ -24,9 +24,28 @@
 	}
 }
 
+.toolbar-collapse .toolbar-nav {
+	.nav-title {
+		display: none;
+	}
+}
+
 @media screen and (max-width: 479px) {
 	.toolbar-nav {
 		align-items: center;
+	}
+
+	.toolbar-collapse .toolbar-nav {
+		flex-direction: column;
+		align-items: center;
+
+		background-color: rgba($main-color-gray-100, .75);
+		margin-top: .25rem;
+		padding: .5rem;
+
+		.nav-title {
+			display: block;
+		}
 	}
 }
 

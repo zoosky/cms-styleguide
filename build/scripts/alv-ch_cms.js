@@ -73,4 +73,11 @@ $( document ).ready(function() {
 	// hyphenator
 	Hyphenator.config({remoteloading: false, defaultlanguage: 'de'});
 	Hyphenator.run();
+
+	// GA
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-36686902-8');
+	gtag('config', 'GA_TRACKING_ID', { 'anonymize_ip': true });
 });

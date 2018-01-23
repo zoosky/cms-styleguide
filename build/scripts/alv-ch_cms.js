@@ -80,9 +80,7 @@ $( document ).ready(function() {
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'UA-36686902-8');
-	gtag('config', 'GA_TRACKING_ID', { 'anonymize_ip': true });
+	ga('create', 'UA-36686902-8', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
 });

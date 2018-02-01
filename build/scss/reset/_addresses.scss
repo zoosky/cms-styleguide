@@ -10,3 +10,9 @@
 		width: 100%;
 	}
 }
+
+@media screen and (max-width: 479px){
+	.address__filter {
+		margin-right: 0;
+	}
+}

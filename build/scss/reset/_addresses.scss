@@ -1,6 +1,8 @@
-.address__filter {
-	margin-right: 1.5rem;
-	min-width: 33%;
+@media screen and (min-width: 480px){
+	.address__filter {
+		margin-right: 1.5rem;
+		min-width: 33%;
+	}
 }
 
 .address__content {
@@ -8,11 +10,5 @@
 
 	.result-list__item {
 		width: 100%;
-	}
-}
-
-@media screen and (max-width: 479px){
-	.address__filter {
-		margin-right: 0;
 	}
 }

@@ -1,6 +1,6 @@
 {
   "name": "@alv-ch/cms-styleguide",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "alv-ch styleguide for cms aem",
   "main": "README.md",
   "scripts": {
@@ -57,7 +57,7 @@
     "url": "https://github.com/alv-ch/cms-styleguide/issues"
   },
   "dependencies": {
-    "@alv-ch/alv-styleguide": "0.1.7"
+    "@alv-ch/alv-styleguide": "0.1.8"
   },
   "homepage": "https://github.com/alv-ch/cms-styleguide#readme"
 }

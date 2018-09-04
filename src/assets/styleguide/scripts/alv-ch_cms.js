@@ -48,8 +48,9 @@ $( document ).ready(function() {
 		});
 	}
 	else {
-		$('.mod-searchfield').after(navi);
-
+		//$('.mod-searchfield').after(navi);
+		$('.mod-searchfield:not(.global-search)').after(navi);
+		
 		$('.dropdown.yamm-fw').each(function(){
 			var containerWidth = $('.container-main > .container').outerWidth();
 			var positionLeft = $(this).offset().left;

@@ -42,10 +42,10 @@ $( document ).ready(function() {
 
 	//add work.swiss to language href to change url accordingly
 	var url_en = 'work.swiss';
-	var hrefEn = $(‘.nav-lang a[lang="en"]’).attr(‘href’); // den bestehenden Link auslesen
+	var hrefEn = $('.nav-lang a[lang="en"]').attr('href'); // den bestehenden Link auslesen
 	var newHref = url_en+=hrefEn;
     //hrefEn.replace(‘arbeit.swiss’, ’work.swiss’); // den bestehenden Link anpassen: arbeit.swiss ersetzen mit zBsp: work.swiss oder wie der neue Link dann auch aussieht, dass ensprechende ersetzen
-    $(‘.nav-lang a[lang="en"]’).attr(‘href’,newHref); // den Link ersetzen mit dem neuen
+    $('.nav-lang a[lang="en"]').attr('href',newHref); // den Link ersetzen mit dem neuen
 
 	
 	if (md.phone() || $(document).width()<768) {

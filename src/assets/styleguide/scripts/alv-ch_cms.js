@@ -39,7 +39,7 @@ window.addEventListener('DOMContentLoaded', function(){
 $( document ).ready(function() {
 	var navi = $('.mod-mainnavigation').detach();
 	var md = new MobileDetect(window.navigator.userAgent);
-/**
+
 	//add work.swiss to language href to change url accordingly
 	var url_en = 'https://www.work.swiss';
 	var hrefEn = $('.nav-lang a[lang="en"]').attr('href'); // den bestehenden Link auslesen
@@ -75,7 +75,7 @@ $( document ).ready(function() {
 		var newHref = url_de+=hrefDe;
    	 	$('.nav-lang a[lang="de"]').attr('href',newHref); // den Link ersetzen mit dem neuen
 	}
-	 */
+	 
 	if (md.phone() || $(document).width()<768) {
 		$('.navbar-alv').after(navi);
 

@@ -14,6 +14,9 @@ window.addEventListener('DOMContentLoaded', function(){
 
 	$('.container-main').removeClass('container');
 	$('.container-fluid').addClass('container');
+	
+	//overwrite external link default target for job-room button
+	document.getElementsByClassName('dropdown yamm-fw')[2].firstElementChild.setAttribute('target', '_self');
 
 	$('header').wrap(header);
 

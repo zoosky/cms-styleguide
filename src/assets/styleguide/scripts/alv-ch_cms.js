@@ -42,43 +42,7 @@ window.addEventListener('DOMContentLoaded', function(){
 $( document ).ready(function() {
 	var navi = $('.mod-mainnavigation').detach();
 	var md = new MobileDetect(window.navigator.userAgent);
-/**
-	//add work.swiss to language href to change url accordingly
-	var url_en = 'https://www.work.swiss';
-	var hrefEn = $('.nav-lang a[lang="en"]').attr('href'); // den bestehenden Link auslesen
-	//prevent setting undefined link on button for current language
-	if(hrefEn !== undefined){
-		var newHref = url_en+=hrefEn;
-   	 	$('.nav-lang a[lang="en"]').attr('href',newHref); // den Link ersetzen mit dem neuen
-	}
-	
-	//add travail.swiss to language href to change url accordingly
-	var url_fr = 'https://www.travail.swiss';
-	var hrefFr = $('.nav-lang a[lang="fr"]').attr('href'); // den bestehenden Link auslesen
-	//prevent setting undefined link on button for current language
-	if(hrefFr !== undefined){
-		var newHref = url_fr+=hrefFr;
-   	 	$('.nav-lang a[lang="fr"]').attr('href',newHref); // den Link ersetzen mit dem neuen
-	}
-	
-	//add lavoro.swiss to language href to change url accordingly
-	var url_it = 'https://www.lavoro.swiss';
-	var hrefIt = $('.nav-lang a[lang="it"]').attr('href'); // den bestehenden Link auslesen
-	//prevent setting undefined link on button for current language
-	if(hrefIt !== undefined){
-		var newHref = url_it+=hrefIt;
-   	 	$('.nav-lang a[lang="it"]').attr('href',newHref); // den Link ersetzen mit dem neuen
-	}
-	
-	//add arbeit.swiss to language href to change url accordingly
-	var url_de = 'https://www.arbeit.swiss';
-	var hrefDe = $('.nav-lang a[lang="de"]').attr('href'); // den bestehenden Link auslesen
-	//prevent setting undefined link on button for current language
-	if(hrefDe !== undefined){
-		var newHref = url_de+=hrefDe;
-   	 	$('.nav-lang a[lang="de"]').attr('href',newHref); // den Link ersetzen mit dem neuen
-	}
-	  */
+
 	if (md.phone() || $(document).width()<768) {
 		$('.navbar-alv').after(navi);
 
